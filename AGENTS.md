@@ -5,6 +5,7 @@ It is kept short on purpose - every line here is paid on every session.
 Intended product direction: VISION.md, an AI education and monetization website.
 Current implementation in this checkout: the `/vision` skill package under `skills/vision/`.
 VISION.md does not describe that package.
+Course research and a proposed roadmap: docs/course-research.md. It is not a build authorization.
 
 ## Learnings
 

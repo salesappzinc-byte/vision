@@ -127,6 +127,9 @@ Proposal for confirmation, not a commitment.
 The first slice is one free gateway course, one on-site practice task, email signup, and community membership with benefits still TBD.
 The recommended consent guardrail above belongs in that slice only if it is accepted.
 Later expansion is the fuller course families, direct paid courses, affiliate tools, sales outreach to people who accepted marketing email, richer course plugins, and any in-site AI login that survives the open questions in Learning experience.
+A sourced research note, with a proposed seven-lesson gateway and three proposed paid paths, is in docs/course-research.md.
+That note's launch segment and course order are proposals for confirmation.
+They do not replace the audience, the families, or the journey in this file.
 
 ## Proposed measures
 
