@@ -6,6 +6,8 @@ Research date: 7 November 2026. This note is for the `salesappzinc-byte/vision` 
 
 Nothing here is implemented. Course tuition, a learner's own tool subscription, and any in-site API spend are three different costs. No tuition is proposed, because no price has been verified as ours.
 
+A separate proposal, not part of the gateway build below, is that an approved member can upload a course and earn when a learner buys it. That proposal is in [creator-marketplace-research.md](creator-marketplace-research.md). It does not change the gateway, the three proposed paid paths, or the first-build acceptance criteria in this file. Creator earnings, a course-referral commission, and an external-tool affiliate sale stay different relationships.
+
 ## 1. Recommendation
 
 **Proposed launch segment, not a confirmed choice.** Start the free course with non-technical solo business owners, freelancers, and early creators who want AI to save time or make a marketing asset. The founder audience is wider: anyone who has heard of AI and does not yet understand it. A narrower first segment is a hypothesis. It makes the exercises concrete, makes a paid next step easier to see, and matches the tool types the founder already named (video, websites, automation). It is not evidence that this group will pay.
@@ -271,6 +273,7 @@ The first build is the gateway and the interest test. It is not the three paid c
 6. Public pages exist for affiliate disclosure, a privacy explanation, and an AI-media note. The AI-media note distinguishes S11, organic Meta disclosure, and Meta's social-issue/election/political ad disclosure, and it says other countries are not covered.
 7. No tuition is shown. No video-generation credit is enabled. No checkout is enabled.
 8. Paid-course scripts and galleries are not required for this acceptance. They wait on section 9.
+9. Creator upload, creator review, and creator payout are outside this list. Their proposed checks are in the marketplace note.
 
 ## 11. Decisions still open
 

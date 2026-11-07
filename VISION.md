@@ -40,6 +40,7 @@ They sign up with email.
 Signup includes community membership.
 Exact community benefits and features are TBD.
 The path then continues into deeper paid courses and relevant affiliate tools.
+A member can also become a course creator, upload a course and its supporting materials, and earn when a learner purchases that course.
 The founder intends future sales and outreach using those email addresses.
 Recommended guardrail, for confirmation, and neither an existing feature nor a legal assurance: account signup and marketing permission stay separate, the marketing ask is plain about sales and outreach, and outreach includes an unsubscribe path and a privacy explanation.
 
@@ -90,8 +91,11 @@ Understanding a bot's tech stack.
 
 The business starts with free gateway courses.
 A progression then leads to paid courses.
-Paid courses may be sold directly, offered through affiliate sales of other products and services, or both.
-Prices, revenue targets, and chosen partners are TBD.
+Paid courses may be sold directly, offered through affiliate sales of other products and services, or by an approved creator whose course a learner buys.
+Four money relationships stay separate: a first-party course sale, a third-party creator's earnings on a purchase, a commission for referring a course sale, and an affiliate sale of an external tool.
+Prices, revenue targets, commission rates, payout timing, payment providers, tax jurisdiction, and the legal seller are TBD.
+A creator statement shows the sale, any agreed fee, any refund or reversal, and whether the amount is estimated, held, available, or paid.
+A calculated share is not money received.
 
 ## Learning experience
 
@@ -102,6 +106,8 @@ That login is a goal to validate.
 It is not a promise that an arbitrary platform allows an embed, and it is not permission to reuse a consumer subscription inside the site.
 Possibilities to validate are an API-based integration, and OAuth or embeds where the provider supports them.
 Still open: costs, rate limits, account linking, privacy, learner data and secrets, vendor terms, and implementation architecture.
+When in-site practice exists, the remaining allowance and any cost are visible.
+Creator status does not remove that allowance, and AI cost is not a hidden deduction from creator earnings.
 This document chooses no stack and no vendor.
 
 ## Principles
@@ -110,13 +116,22 @@ Teach who, why, how, and what before the paid step.
 Keep free gateway learning ahead of payment.
 Put community membership on signup, and leave its benefits unnamed until they are decided.
 Keep purchasing automation and communications inside user-authorised work.
-Leave prices, partners, numeric targets, and vendors unset until the founder sets them.
+Leave prices, partners, numeric targets, commission rates, payout timing, and vendors unset until the founder sets them.
+Keep a creator draft private until the version is approved, and review a material change to a published course again.
+The creator keeps ownership.
+The platform's licence to host and sell is part of creator terms that are not written yet.
+A published creator course is original, accurate, and for beginners, with a project, an accessible presentation, and a freshness date.
+The creator answers course questions and corrects the material.
+The platform handles billing, refunds, access, and moderation.
+A creator does not receive the learner email list, another creator's drafts, or another creator's earnings.
+If a creator leaves, a buyer keeps the access the purchase promised.
+The exact access, support, and refund rule is still open.
 Speak of the website as intent until the site exists.
 
 ## Non-goals
 
 Courses, signup, community features, checkout, outreach, and AI connectors are absent from this repository today.
-This file is not a privacy policy, a terms of use, or a legal sign-off.
+This file is not a privacy policy, a creator agreement, a terms of use, or a legal sign-off.
 It is not an implementation spec, a page map, or a stack choice.
 Bypassing platform controls, reusing a consumer AI subscription inside the site, and treating ordinary signup as consent to sales email are out of scope.
 Unsolicited bulk messaging is out of scope.
@@ -130,6 +145,10 @@ Later expansion is the fuller course families, direct paid courses, affiliate to
 A sourced research note, with a proposed seven-lesson gateway and three proposed paid paths, is in docs/course-research.md.
 That note's launch segment and course order are proposals for confirmation.
 They do not replace the audience, the families, or the journey in this file.
+A proposed later slice invites approved creators onto those paid paths.
+Uploads in that slice stay private until review.
+Open applications, more than one creator on a course, and subscription royalties are later proposals, not this decision.
+How other companies pay teachers, and what this site should not copy, is in docs/creator-marketplace-research.md.
 
 ## Proposed measures
 
@@ -137,5 +156,12 @@ Proposal for confirmation, not a commitment.
 No numbers are set.
 Questions worth answering later: whether a newcomer can explain who, why, how, and what after the gateway course; whether they finish an on-site practice task; whether signup, marketing consent, and community membership stay distinct; and whether free learners continue into a paid course or a relevant affiliate tool.
 
-A change aligns when it helps this audience understand AI and practise toward their own goals, keeps the free gateway ahead of payment, keeps community membership on signup, and keeps purchasing and communications inside authorised use.
-A change should be resisted when it treats this document as the current codebase, sets a price or a partner the founder has not set, promises that any AI platform can be embedded or that a consumer subscription can be reused here, drops community membership from signup, or widens purchasing and messaging into bypassing controls or unsolicited bulk messaging.
+A change aligns when it helps this audience understand AI and practise toward their own goals, keeps the free gateway ahead of payment, keeps community membership on signup, lets an approved creator earn on a learner purchase, keeps drafts private until review, keeps the four money relationships distinct, and keeps purchasing and communications inside authorised use.
+A change should be resisted when it treats this document as the current codebase, sets a price, a commission, a payout clock, a provider, a tax home, or a merchant of record the founder has not set, hides an AI allowance or deducts AI cost without saying so, publishes an unreviewed draft, gives a creator the learner email list, promises that any AI platform can be embedded or that a consumer subscription can be reused here, drops community membership from signup, or widens purchasing and messaging into bypassing controls or unsolicited bulk messaging.
+
+## Open decisions
+
+Three decisions are still required before a creator can be paid.
+Which countries launch, and which legal entity is the seller, are undecided.
+The financial terms, the refund rules, and the payout rules are undecided.
+The editorial and maintenance capacity the platform can operate is undecided.
