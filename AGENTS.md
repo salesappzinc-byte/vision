@@ -2,6 +2,7 @@
 
 vision: this file is the always-loaded memory for agents working in this repo.
 It is kept short on purpose - every line here is paid on every session.
+Acceptance policy for this repo: VISION.md.
 
 ## Learnings
 
