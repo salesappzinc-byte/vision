@@ -1,6 +1,6 @@
 # Lesson 3. A brief you can reuse
 
-**Status:** Written draft, 7 November 2026. Not recorded. Not piloted. Not published.
+**Status:** Written draft, desk-edited 7 November 2026. Not recorded. Not piloted. Not published.
 
 **Objective:** Produce a one-page brief of your work, your creator project, or a personal goal, using questions first and your own edit second.
 
@@ -16,9 +16,9 @@ We will let the tool interview you, one question at a time. That is slower than 
 
 Use these headings, in this order. Who it is for. What they are trying to get done. What you offer, or what the personal project is. What you will not claim. Tone. Proof you actually have. Tools you already use. The next small step. "Proof you actually have" might be "I have done this work for three imaginary shops in class" or, in real life, "I have a folder of my own examples". If you have no proof yet, write "none yet". Do not borrow a review from the internet. Do not type a price unless you are looking at your own real price and you are sure this chat is a safe place for it. In class, leave price blank. This draft never uses a sample price.
 
-Sam, our fictional bookkeeper, answers like this. Who it is for: owners of small shops who bring a monthly folder of receipts. What they are trying to get done: know which month is finished. What Sam offers: a monthly books check-in. What Sam will not claim: savings, a number of clients, or a quote from a shop owner. Tone: calm and specific. Proof: none in this fictional example, because Sam is not real. Tools: a notebook and a spreadsheet Sam already keeps. Next step: a Monday list of which sample shop folder is missing.
+Sam's answers stay inside a writing exercise. Who it is for: Sam, writing a note about three labelled practice folders. What they need: to see which label is still on the desk. What Sam offers: a short written list. Not bookkeeping advice, not a tax service, and not a statement that any month is closed. What Sam will not claim: that papers are due, that anyone saved money, or that a shop owner said anything. Tone: calm and specific. Proof: none, because Sam is fictional. Tools: a notebook. Next step: the Monday list.
 
-A personal brief is the same shape. Who it is for: neighbours who want to swap books they have finished. What they are trying to get done: leave with something new to them. What the project is: a Saturday book swap at the library, date not set. What you will not claim: that the library has agreed, unless it has. Tone: friendly and short. Proof: none yet, or "I have spoken to the front desk" if that is true. Next step: write the six-line plan.
+Nia's brief is complete enough to copy if you are not using Sam. Who it is for: neighbours who might bring books they have finished. What they need: to leave with a book that is new to them. What the project is: a book swap. Date: not set. Place: not agreed. What Nia will not claim: that a library has said yes, or that a neighbour is quoted. Tone: friendly and short. Proof: none yet. Tools: paper. Next step: six lines Nia will edit before showing anyone.
 
 When the tool drafts the page, read it beside your answers. Strike any sentence you cannot point back to an answer. If the tool writes "trusted by local shops", and you never said that, delete it. Trust is something people grant. It is not a line you paste.
 
@@ -38,14 +38,27 @@ This site may later save the brief for you. This draft does not assume that save
 
 **Label:** Fictional. No price. No testimonial. No result.
 
-> Who it is for: owners of small shops who bring a monthly folder of receipts.
-> What they need: to know which month is finished.
-> What I offer: a monthly books check-in. Price: not stated.
-> I will not claim: savings, a client count, or a quote from an owner.
+Sam:
+
+> Who it is for: me, writing about folders labelled Shop A, Shop B, and Shop C.
+> What they need: a list of which label is still on the desk.
+> What I offer: that list, in words. This is not accounts or tax advice. Price: not stated.
+> I will not claim: that anything is due, that a month is closed, or that an owner spoke.
 > Tone: calm and specific.
-> Proof I have: none in this example, because the shops are labels.
-> Tools I already use: a notebook and a spreadsheet.
-> Next small step: a Monday list of which sample folder is missing.
+> Proof I have: none. The folders are labels.
+> Tools I already use: a notebook.
+> Next small step: write the Monday list and edit it.
+
+Nia:
+
+> Who it is for: neighbours who might swap books they have finished.
+> What they need: a book that is new to them.
+> What the project is: a book swap. Date: not set. Place: not agreed.
+> I will not claim: library permission, or a quote from a neighbour.
+> Tone: friendly and short.
+> Proof I have: none yet.
+> Tools I already use: paper.
+> Next small step: six lines I will edit before I show anyone.
 
 ## Copy-ready prompt
 
@@ -76,7 +89,7 @@ One-page brief, edited by you.
 
 ## Common mistakes
 
-- Asking for a "brand story" in one shot and keeping it unedited.
+- Asking for your whole life story in one shot and keeping it unedited.
 - Filling "proof" with a sentence the tool wrote.
 - Putting a wished-for price or a wished-for follower count on the page.
 - Writing two pages. Cut until it is one.

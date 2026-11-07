@@ -1,6 +1,6 @@
 # Lesson 4. Three drafts, then your edit
 
-**Status:** Written draft, 7 November 2026. Not recorded. Not piloted. Not published.
+**Status:** Written draft, desk-edited 7 November 2026. Not recorded. Not piloted. Not published.
 
 **Objective:** Turn your brief into three pieces you edited yourself: a short post, an email, and a description of a product or a service.
 
@@ -14,13 +14,13 @@ You now have a page of facts. This lesson spends those facts three ways. A post 
 
 Start from the brief, not from a mood. Paste the brief, then ask for one piece at a time. If you ask for all three in one breath, mistakes repeat three times. After each reply, do a comparison that takes one minute. What did I already say in the brief? What appeared from nowhere? What would I be ashamed to publish if a real person saw it?
 
-The post, for fictional Sam, is four to six lines about a monthly books check-in. It may tell a shop owner what to bring: the month's folder, not a shoebox of unmarked paper. It may not say that shops saved money. Sam never measured that. It may not quote Shop A. Shop A cannot speak. It may not name a price. We left price blank on purpose.
+Sam's post is four to six lines about the practice folders. It may say Shop A is still on the desk. It may not say papers are due, that a month is closed, or that anyone saved money. It may not quote Shop A. Shop A cannot speak. It may not name a price. This is writing practice, not financial guidance.
 
-The email is a reminder Sam might send later, to a labelled shop, about a sample month. Write the subject line yourself if the tool's subject is cute rather than clear. The body must not include a link you have not checked. In this lesson, do not include a link at all. End with a line that only you can finish, such as the day you will look at the folder. Then stop. Do not press send. Do not connect the chat tool to an inbox. The worksheet has a box that says "Sent? No." Leave it as no.
+The email is a note Sam might send later, and does not send today. If the subject is vague, rewrite it yourself. No links. End with a line only you can finish, such as "I will look at the label myself." Do not press send. Do not connect the chat page to an inbox. The worksheet says "Sent? No." Leave it as no.
 
-The description is the longest of the three, and still short. Six to ten lines. What the check-in is. Who it is for. What the person brings. What Sam will not promise. If you are a creator with a product instead of a service, describe the product the same way. A fictional alternative, if you need the shape: reusable cloth bags for carrying vegetables home. You may say they are cloth and that they are washed by the owner. You may not say they are "the best", that a customer loved them, or what they cost. No cost is stated in this course.
+The description is six to ten lines about the same list: what the note is, who it is for (Sam), and what it will not promise. It must say it is not accounts or tax advice.
 
-Personal path: three pieces for the library book swap. A post that invites neighbours without quoting a neighbour. An email you might send to a friend who offered to help, not sent today. A description of the swap: people bring finished books and leave with books that are new to them. Date not stated unless you have set one outside the tool.
+Nia writes three pieces too. A post that describes the swap without quoting a neighbour. An email to a friend that is not sent. A description: people bring finished books and leave with books that are new to them. Date not set. Library not agreed. No price.
 
 Edit on the worksheet, not only in the chat. The chat will scroll away. The worksheet has three columns: first draft, what I changed, final. "What I changed" can be "deleted a quote I did not have" or "cut a price". If you changed nothing, you are not finished. A first draft that is perfect is rare, and in this exercise it is a sign you did not look.
 
@@ -31,31 +31,47 @@ When all three finals exist, read them together. They should not contradict the 
 1. Have Sam's brief from lesson 3 on screen. Say it is the only source of facts.
 2. Generate the post. Delete one invented claim on camera. Do not publish.
 3. Generate the email. Point at the send button and do not click it. Tick "Sent? No."
-4. Generate the description. Show the cloth-bag alternative for ten seconds with the same bans: no price, no review.
+4. Generate the description. Read the line that says this is not tax advice. Then show Nia's three short finals so the personal path is visible.
 5. Fill one row of the worksheet so the three columns are obvious.
 
 ## Worked example (fictional)
 
 **Label:** Fictional. Not posted. Not sent. No price. No customer voice.
 
-Post, after edit:
+Sam's post, after edit:
 
-> I offer a monthly books check-in for small shops.
-> Bring one month's folder, labelled.
-> I do not need every loose receipt from the year.
-> I will not promise a saving, because I have not measured one.
+> Three practice folders are labelled Shop A, Shop B, and Shop C.
+> Shop A is still on the desk.
+> This note does not say anything is due.
+> It is not accounts or tax advice.
 > This note is my draft, not a customer's words.
 
-Email subject, after edit: `Sample only: March folder for Shop A`
+Email subject: `Practice only: folder still on the desk`
 
-Email last line: `I am not sending this message. It is practice.`
+Email last line: `I am not sending this message.`
 
-Description, after edit:
+Sam's description, after edit:
 
-> A monthly books check-in is an hour I spend with one month of a shop's papers.
-> You bring the folder. I list what is missing.
-> I do not state a fee in this exercise.
-> I do not speak for any shop owner.
+> This is a written list of labelled practice folders.
+> It is for me, so I can see which label I have not opened.
+> It is not advice on keeping books or filing tax.
+> No fee is stated. Nobody else is quoted.
+
+Nia's post, after edit:
+
+> I am planning a book swap for neighbours.
+> People would bring books they have finished.
+> No date is set. No library has agreed.
+> I am not quoting anyone.
+> Draft for me to edit. Not posted.
+
+Nia's email last line: `Practice copy. Do not send.`
+
+Nia's description, after edit:
+
+> A book swap means finished books come in and books that are new to someone go out.
+> The date is not set. A place is not agreed.
+> I will not invent a neighbour's words. No price is stated.
 
 ## Copy-ready prompts
 

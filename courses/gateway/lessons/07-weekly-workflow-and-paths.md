@@ -1,6 +1,6 @@
 # Lesson 7. One weekly task, on paper
 
-**Status:** Written draft, 7 November 2026. Not recorded. Not piloted. Not published.
+**Status:** Written draft, desk-edited 7 November 2026. Not recorded. Not piloted. Not published.
 
 **Objective:** Map one real weekly task as trigger, input, action, human approval, and error handling, then optionally note whether a later video, website, or automation lesson would interest you.
 
@@ -12,9 +12,9 @@
 
 You have a card, prompts, a brief, three drafts, a source log, and a do-not-paste list. This last lesson puts one repeating task on paper so you can see the human in the loop. We will not build the automation. We will not buy a tool. We will not organise your real files. The map is the practice.
 
-Pick a task that already happens. Sam's fictional task is a Monday list: which sample shop folder is still missing. Yours might be a weekly status note, a batch of captions, or a reminder to yourself about the book swap. If you do not repeat any task, map the next time you will write your three drafts again. That is allowed.
+Pick a task that already happens, or the next time you will rewrite your three drafts. Sam's fictional task is a Monday list of which practice folder is still on the desk. It is not a bookkeeping close and not a tax task. Nia's task is writing six lines toward a book swap that has no date yet.
 
-Use five boxes. Trigger: what tells you to start. For Sam, it is Monday morning, not a software ping we switched on. Input: what you gather with your own hands. The sample folder labels, your brief, last week's note. Action: what you do with the chat tool, written as a sentence. "Ask for a six-line list from these labels only." Human approval: who reads it before it leaves the desk. Sam. Error handling: what you do when the tool is down, the draft names a fourth shop, or a folder is missing. You stop, you fix the label, or you skip the week. You do not let a tool email Shop A.
+Use five boxes. Trigger: what tells you to start. For Sam, it is Monday morning on a paper calendar, not a message a tool sends by itself. Input: what you gather with your own hands. The labels, your brief, last week's note. Action: one sentence about what you will ask the chat page. "Ask for a six-line list from these labels only." Human approval: who reads it before it leaves the notebook. Sam, or Nia. Error handling: if the tool is down, if a fourth shop appears, or if a date appears that you did not set, you stop and fix the words. You do not let a tool email anyone.
 
 Draw the boxes on the worksheet. Then write one line under the map: "I did not connect this to email, files, or a shop. I did not spend money." If that line is false, disconnect whatever you connected before you finish the lesson. This course does not include live automation.
 
@@ -46,7 +46,17 @@ You started as someone who had heard the words and wanted a practical use. You s
 | Human approval | I read the list before it leaves my notebook. Nobody else is emailed. |
 | Error handling | If a fourth shop appears, I delete it. If the tool is down, I write the list myself. If I am unsure, I do not send anything. |
 
-Interest note: "Not yet. I may look at a writing-and-video lesson later if one exists. I am not promised a result."
+Interest note: "Not yet. I may look at a video lesson later if one exists. I am not enrolled. I am not promised a result."
+
+Nia's map:
+
+| Box | Nia's map |
+| --- | --- |
+| Trigger | The morning I sit down with paper. No tool starts this. |
+| Input | My brief. No neighbour's private message. |
+| Action | Ask for six lines about a book swap with no date and no library agreement. |
+| Human approval | I read the six lines before I show them to anyone. |
+| Error handling | If a date, a quote, or a library "yes" appears, I delete it. If the chat page is down, I write the six lines myself. |
 
 ## Copy-ready prompt
 
@@ -79,7 +89,7 @@ Weekly task map, plus the completion checklist. Interest note only if you want o
 
 ## Common mistakes
 
-- Drawing a map and then turning on an integration "to see if it works".
+- Drawing a map and then connecting email or files "to see if it works".
 - Putting "the tool approves" in the human box.
 - Treating a tick on video, website, or automation as a purchase or a promise.
 - Agreeing to marketing email because the form sat next to the lesson button. Those are different choices.

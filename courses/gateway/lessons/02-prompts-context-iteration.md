@@ -1,6 +1,6 @@
 # Lesson 2. Context, and a second pass
 
-**Status:** Written draft, 7 November 2026. Not recorded. Not piloted. Not published.
+**Status:** Written draft, desk-edited 7 November 2026. Not recorded. Not piloted. Not published.
 
 **Objective:** Rewrite a weak prompt so it includes a role, a task, context, a format, and an example, then run a second pass that removes anything you did not say.
 
@@ -12,23 +12,23 @@
 
 A short prompt is not always a clear one. "Write a post" can mean a poster, a phone caption, or a letter. The tool will guess. Last lesson, Sam's guess added a shop and a portal. This lesson is how you give enough context, and how you go back when the first reply is almost right.
 
-Use five pieces, in any order you can remember. Role: who the tool is pretending to help, such as "help me as a solo bookkeeper". Task: the verb, such as "draft". Context: the facts that are true, and the facts you refuse to invent. Format: how long, and what shape. Example: a tiny sample of the tone you want, written by you.
+Use five pieces. Role: who you are writing as, such as "help me write a note about labelled folders". Task: the job, such as "draft". Context: facts that are true, and facts you refuse to invent. Format: how long, and what shape. Example: one line of tone you wrote yourself.
 
-Here is a weak prompt, still using our fictional bookkeeper. "Write something about my business." You can already see the holes. Which business. Which reader. What it must not claim. A stronger prompt sounds like this. "Help me as a solo bookkeeper. Draft a four-line note I might post later. Context: I offer a monthly books check-in for shops. I have not named a price. I have no customer quotes. Do not invent any. Format: four short lines, no hashtags. Example of tone: calm and specific, like 'Bring the March folder, not every scrap of paper.'"
+Sam's weak prompt is "Write something about my folders." It does not say which folders, or that this is not tax advice. A stronger prompt: "Help me write a note to myself. Draft four short lines. Context: three practice folders are labelled Shop A, Shop B, and Shop C. I want a list of which label is still on the desk. Do not say anything is due, owed, or a tax record. Do not invent a shop. Example of tone: 'Shop A is still on the desk.'"
 
-The first reply may still wander. That is what the second pass is for. You do not start over from a blank page. You paste the reply back and say what to change. "Cut line 3. I never said I serve restaurants. Keep the calm tone. Ask me if you need a fact." Iteration means that loop: answer, inspect, instruct, answer again. Two passes are enough for this lesson. More passes are allowed. Endless passes are how people stop thinking.
+The first reply may still wander. A second pass pastes that reply back and says what to change. "Cut any line I did not ask for. I never said Friday. Keep four lines." That loop is enough. Two passes are the lesson. More are allowed. Endless passes are how people stop thinking.
 
-Read every proper noun. If you did not type the name, it does not belong in the draft. Read every number. If you did not type the number, take it out. A second pass is also where you ask the tool to show its guesses. A useful instruction is: "List any detail you added that was not in my prompt, and delete those sentences."
+Read every name. If you did not type it, delete it. Read every number and every date the same way. Ask the tool: "List any detail you added that was not in my prompt, and delete those sentences."
 
-If you are on a personal project instead of a business, the same five pieces work. Role: help me plan a library book swap. Task: draft a six-line plan. Context: the swap is for neighbours, I have not set a date, do not invent quotes. Format: six lines. Example: "People bring books they have finished. They leave with books that are new to them."
+Nia uses the same five pieces. Role: help me plan a book swap. Task: draft six lines. Context: neighbours would bring books they have finished; no date is set; no library has agreed; do not invent quotes. Format: six lines. Example: "People bring books they have finished. They leave with books that are new to them."
 
-You may use a chat box on this site if one exists when you study. This draft does not assume it does. Any other chat tool is fine if you are allowed to use it. Its subscription, if it has one, is separate from this free lesson. Do not connect the tool to your email. Do not press send on anything. We are writing prompts, not sending messages.
+There is no chat box on this website. Open a chat page in your browser if you are allowed to. If it costs money, that cost is yours. Do not connect email. Do not press send. You are saving prompts, not sending messages.
 
 Save both prompts in your own words if you change them. A prompt you cannot find next week is not reusable. Put a title on each one, such as "Four-line note" and "Cut what I did not say". By the end of the course the toolkit holds 10. Two honest ones today are better than 10 you do not understand.
 
 ## Presenter and demo steps
 
-1. Show the weak prompt on the left and the five labels on the right: role, task, context, format, example.
+1. Show the weak prompt, then the five labels, one after another if you have only one screen: role, task, context, format, example.
 2. Type the weak prompt. Read the reply only long enough to find one invented detail.
 3. Type the stronger Sam prompt. On the reply, highlight anything still not in the prompt.
 4. Paste that reply into a second message using the cut prompt. Show the shorter result.
@@ -43,11 +43,22 @@ Weak prompt: `Write something about my business.`
 Stronger prompt:
 
 ```
-Help me as a solo bookkeeper.
-Draft a four-line note I might post later.
-Context: I offer a monthly books check-in for shops. I have not named a price. I have no customer quotes. Do not invent any.
-Format: four short lines, no hashtags.
-Example of tone: calm and specific, like "Bring the March folder, not every scrap of paper."
+Help me write a note to myself.
+Draft four short lines I might keep in a notebook.
+Context: three practice folders are labelled Shop A, Shop B, and Shop C. I want to see which label is still on the desk.
+Do not say anything is due, owed, taxable, or finished. Do not invent a shop or a quote.
+Format: four short lines.
+Example of tone: "Shop A is still on the desk."
+```
+
+Nia's stronger prompt:
+
+```
+Help me plan a neighbourhood book swap.
+Draft six short lines.
+Context: people would bring books they have finished and leave with books that are new to them. No date is set. No library has agreed. Do not invent quotes.
+Format: six lines.
+Example of tone: "Bring books you have finished."
 ```
 
 Second pass:
@@ -62,7 +73,7 @@ Keep four lines or fewer. If a fact is missing, write "you did not say" instead 
 Prompt A, adapt the bracketed parts:
 
 ```
-Help me as [role, for example a solo bookkeeper or a person planning a book swap].
+Help me as [role, for example a person writing folder notes, or a person planning a book swap].
 Task: [draft / list / rewrite] this: [one sentence].
 Context that is true: [facts].
 Do not invent: [customers, prices, quotes, dates I have not set].
@@ -75,7 +86,7 @@ Prompt B:
 ```
 Review the reply above. List details you added that were not in my prompt.
 Delete them. Where you need a fact, write "you did not say" and one question.
-Do not send, post, or save this anywhere except this chat.
+Do not post or send. You may copy this prompt into your notes.
 ```
 
 ## Your exercise

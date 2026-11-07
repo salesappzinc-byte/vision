@@ -2,7 +2,7 @@
 
 **Status:** Written draft, 7 November 2026. Not recorded. Not piloted. Not published.
 
-Copy this file into your own notes. Replace every fictional Sam line with your work. Sample labels only: Shop A, Shop B, Shop C, or a personal book swap. Do not paste secrets.
+Copy this file into your own notes. Two filled samples live in the lessons: Sam's folder notes, and Nia's book swap. Sam's notes are writing practice, not bookkeeping or tax advice. Replace both with your own non-secret work. Do not paste secrets. Open a chat page in your browser. This file is not a chat box.
 
 Course index: [index.md](index.md).
 

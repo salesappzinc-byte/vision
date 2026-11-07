@@ -1,6 +1,6 @@
 # Lesson 6. What stays in your hands
 
-**Status:** Written draft, 7 November 2026. Not recorded. Not piloted. Not published.
+**Status:** Written draft, desk-edited 7 November 2026. Not recorded. Not piloted. Not published.
 
 **Objective:** Decide what you will not paste into a tool, and when a human must approve a draft before it is sent, posted, or used as if a real person said it.
 
@@ -24,7 +24,7 @@ Human approval is the last step, and it is a person. You, or someone you asked, 
 
 Apply the list twice. First, read your brief. If a line has a real client's name, replace it now. Second, read the post, the email, and the description. Tick each one: no secret, no fake speaker, no unapproved face, a human still has to approve. Write the ticks on the do-not-paste page so they are not only in your head.
 
-Personal path: the book swap email to a friend is still not sent. A photo of a neighbour's child is not a fun test image. A public library page you opened in lesson 5 can be named. A private chat with the librarian cannot be pasted.
+Nia's book-swap email is still not sent. A photo of a neighbour is not a test image. A public page Nia opened in lesson 5 can be named. A private message cannot be pasted. Sam's folder note is still not tax advice, and Sam still does not paste a real spreadsheet.
 
 If this feels strict, that is the point of a first course. You can loosen a rule later when you know why it exists. You cannot un-paste a secret.
 
@@ -40,15 +40,22 @@ If this feels strict, that is the point of a first course. You can loosen a rule
 
 **Label:** Fictional. Nothing sent.
 
-Sam's do-not-paste lines:
+Sam:
 
-> I will not paste real shop names, receipt photos, tax numbers, or bank details.
-> I will not paste a client's spreadsheet.
-> I will not ask for a customer's face or voice.
+> I will not paste real names, photos of papers, identity numbers, or bank details.
+> I will not paste a real spreadsheet. This course is not tax advice.
+> I will not ask for anyone's face or voice.
 > I will not publish a sentence as if Shop A wrote it.
-> A human, me, reads the final before any send. Today the send does not happen.
+> I read the final before any send. Today nothing is sent.
 
-One edit on the post: delete "Shop owners say this saved their week." Replace with "I drafted this note myself with a chat tool, and I edited it."
+Nia:
+
+> I will not paste a neighbour's message, phone number, or photo.
+> I will not claim a library said yes.
+> I will not put a neighbour's words in a post.
+> I read the note before I show it to anyone. Today I do not send it.
+
+One edit on a bad line: delete "Shop owners say this saved their week." Replace with "I drafted this note with a chat page, and I edited it."
 
 ## Copy-ready prompt
 
