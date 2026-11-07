@@ -60,6 +60,7 @@ The `/vision` skill documented on this page is what the repository currently imp
 [VISION.md](VISION.md) states a different, intended product, an AI education and monetization website, which this repository does not yet build.
 [docs/course-research.md](docs/course-research.md) is a sourced research note and a proposed course roadmap.
 It does not confirm a launch segment or a course order, and it is not software in this repository.
+[courses/gateway/index.md](courses/gateway/index.md) is a written draft of the free gateway course. It is not recorded, piloted, or published, and it is not the software in this repository.
 [docs/creator-marketplace-research.md](docs/creator-marketplace-research.md) is a sourced note on members uploading courses and earning from purchases.
 Commission, payout timing, the payment provider, and the legal seller are undecided there, and that note is not software either.
 

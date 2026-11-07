@@ -150,6 +150,8 @@ The narrow segment is the same kind of judgement. Solo owners, freelancers, and 
 
 **Production assets:** seven lesson scripts, one toolkit template, the routing questions, and captions if video is used. Keep examples tool-agnostic.
 
+A written first draft of those scripts, the toolkit, the five-question check, and the recording checklist is in [courses/gateway/index.md](../courses/gateway/index.md). It is not recorded, piloted, or published. It does not replace this research note.
+
 **Website requirements for this course:** lesson pages, a text practice box, a place to save the toolkit, email signup, community membership recorded at signup, marketing permission stored separately from the account if that guardrail is accepted, and the interest record from lesson 7. Community benefits stay TBD, as in VISION.md. Exact lesson-gating (what is visible before signup) is a test, not a decision. Do not collect payment on this course.
 
 ## 6. Proposed paid paths
