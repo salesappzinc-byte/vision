@@ -2,7 +2,9 @@
 
 vision: this file is the always-loaded memory for agents working in this repo.
 It is kept short on purpose - every line here is paid on every session.
-Acceptance policy for this repo: VISION.md.
+Intended product direction: VISION.md, an AI education and monetization website.
+Current implementation in this checkout: the `/vision` skill package under `skills/vision/`.
+VISION.md does not describe that package.
 
 ## Learnings
 

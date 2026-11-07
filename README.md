@@ -56,7 +56,8 @@ For what the result looks like, see
 [firstmate's VISION.md](https://github.com/kunchenguid/firstmate/blob/main/VISION.md) -
 produced by exactly this process.
 
-This repository's own acceptance policy is [VISION.md](VISION.md).
+The `/vision` skill documented on this page is what the repository currently implements.
+[VISION.md](VISION.md) states a different, intended product, an AI education and monetization website, which this repository does not yet build.
 
 ## Quick Start
 

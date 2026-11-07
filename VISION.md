@@ -1,70 +1,138 @@
 # Vision
 
-`vision` exists so that a repository's revealed choices become one written acceptance policy.
-The problem it takes on is the one the README names: those choices already live in merged work, in features quietly declined, and in fixes made at the root, and they stay unwritten, so every contributor, every coding agent, and every future you re-litigates them from scratch.
-It serves the author of a target repository, by default that repo's owner, and the later reviewers, human or agent, who accept or resist a change from VISION.md alone.
-It turns readable history, and verdicts only that author can give, into that file.
-It owns exactly one thing: the target repository's VISION.md.
-Its stated value is four practices already written into this package: principles cite real history, hypotheticals are hard enough to be unpredictable, the review board uses the shipped house style, and VISION.md alone carries the verdict.
+This document is the founder's intended product: an AI education and monetization website.
+The code in this repository today is the `/vision` agent skill under `skills/vision/`.
+That skill is existing tooling. It drafts a VISION.md from some other repository's history, and it is not this website.
+The website below is not implemented in this tree.
+No brand name, price, revenue target, or vendor is chosen.
+Anything under a "proposal" heading is for confirmation, and it is not a commitment.
 
-## Evidence over invention
+## Audience
 
-Every principle traces to named pull requests, commits, files, docs, or reasoning the author has already put into VISION.md.
-A generic engineering virtue stays out unless the history shows that virtue in particular.
-When merged pull requests are readable, they are the evidence base; otherwise default-branch commit history is the evidence base.
-When no real history is readable, the run stops and says so.
-Invented values, invented pull-request titles, and invented evidence end the run.
-A vision built on invented evidence is worse than no vision.
+The audience is people who have heard of AI and do not yet understand who it is for, why it is used, how it works, or what it is.
+They also do not yet see what AI can do for them, which benefits matter, or how to use it to reach their own goals.
+The website is meant to become their trusted place to understand AI, practise it, and later buy deeper courses.
 
-## The author owns the verdict
+## Problem
 
-The agent drafts the policy, writes fault-line hypotheticals, and folds the author's reasoning into the prose.
-Approval stays with the author.
-A hypothetical that a drafter can already predict is replaced.
-Each board holds 8-12 hypotheticals, and each one states both sides fairly.
-Silence leaves the draft unsigned.
+Hearing about AI still leaves who, why, how, and what unanswered.
+Without that, a person cannot judge the benefits or put AI to work on a goal of their own.
+The product closes that gap with practical teaching and practice, then opens a path into deeper paid learning.
 
-## One committed surface
+## Promise
 
-VISION.md is the only alignment surface that gets committed.
-Review-board transcripts stay in tool scratch.
-Answers files, including VISION-ANSWERS.md, stay out of the target repo.
-A repo that already has an answers file gets its missing reasoning folded into the prose, then loses the file and any pointer to it.
-The prose stays a page or two, with a target of 40-70 lines, one sentence per line, in declarative present tense, with plain hyphens.
-Output from this skill carries no roadmap, no feature list, and no marketing voice.
+A newcomer can discover practical benefits and start on a free gateway course.
+Practice for a course happens on the site.
+The same place later carries the learner into community membership, deeper paid courses, and relevant tools.
+The aim is a trusted path: understand, practise, then pay for depth.
 
-## The board is the shipped template
+## Learning outcomes
 
-The review loop runs on lavish-axi, launched with `npx -y lavish-axi`, and the skill adds no install of its own.
-The agent copies `skills/vision/assets/review-template.html` and `review.css` into scratch, fills only the template's marked slots, and leaves the stylesheet unchanged.
-The full latest draft stays visible, and hypotheticals are dealt one card at a time.
-Presentation fixes to that surface stay in scope when they keep the slot contract, as the back-sheet and completion-button fixes did.
-The package ships the skill.
-Review screenshots and records of a single review round stay out of the package.
+The gateway course aims to leave a learner able to explain, in plain language, who AI is for, why it is used, how it is used, and what it is.
+It aims to leave them able to name benefits that attach to a goal of their own, and to finish a practice task on the site.
+Deeper courses aim at doing the work in the families below.
+No numeric outcome is set.
 
-## Any harness
+## Journey
 
-The skill names no host-specific agent tools.
-A GitHub-class CLI supplies merged pull requests when they are accessible.
-The published unit is an `npx skills` package: `skills/vision/SKILL.md` plus the review stylesheet and the board template.
+A visitor discovers practical benefits, then enters free gateway learning.
+They sign up with email.
+Signup includes community membership.
+Exact community benefits and features are TBD.
+The path then continues into deeper paid courses and relevant affiliate tools.
+The founder intends future sales and outreach using those email addresses.
+Recommended guardrail, for confirmation, and neither an existing feature nor a legal assurance: account signup and marketing permission stay separate, the marketing ask is plain about sales and outreach, and outreach includes an unsubscribe path and a privacy explanation.
 
-## Scope
+## Offerings
 
-This repository is that package.
-Out of scope: a hosted review service, a sample client's VISION.md, a committed board transcript, a second alignment document, and a binding to one agent host.
-Goals, metrics, and commitments enter a VISION.md only after the target history or the author supplies them.
-This file is an evidence scaffold for review.
-Author sign-off through the review board is still open.
+The families below are illustrative, not a closed catalog.
+Free gateway courses come first.
+Paid depth comes after the gateway, by direct sale of this site's courses, by affiliate sale of other products and services, or by both.
+Which offers are direct, which are affiliate, and in what order, is still open.
 
-A change aligns when a reviewer who never saw the board can accept or resist from VISION.md alone, every line still traces to evidence or to reasoning the author stated, and the shipped board's slot contract still holds.
-A change should be resisted when it invents that evidence, commits an answers file or a transcript, replaces the review surface, ties the skill to one host, or turns the skill's output into a roadmap or a pitch.
+### Video for creators and marketers
 
-## Open questions
+Ultra-realistic AI video, branching into UGC videos and product advertisements.
+This family is for content creators, YouTube creators, and marketers.
 
-A finer audience than the target author and the later reviewer of VISION.md is TBD.
-Value for this fork beyond evidence, stress tests, the house-style board, and a single alignment surface is TBD.
-Initial milestones after the shipped history are TBD.
-That history is the initial package (`c69a699`), the review-board presentation fixes (`d4b9f5f`), a short agent-memory file with no product claims (`83d31a5`), and VISION.md as the only alignment surface (`7a20c38`).
-Success measures, numeric targets, and deadlines are TBD.
-The only written bar is the skill's pre-approval checklist: traceable lines, 8-12 unpredictable hypotheticals, author reasoning reflected in the prose, and no answers file left in the target repo.
-The question that completes this document is open: what this project should refuse beyond the refusals the shipped skill already states.
+### Coding, platforms, and commercial use
+
+AI coding.
+Platforms and services.
+Affiliate opportunities.
+Programs.
+Automated purchasing bots.
+Purchasing automation here is the learner's own authorised use.
+Bypassing a service's controls is out of scope.
+
+### Websites
+
+Building websites, including planning.
+Services and agents for planning, graphics, and branding sit in this family.
+
+### Marketing
+
+AI Facebook ads and related marketing.
+
+### Operations and communications
+
+Task automation.
+Organising computer files.
+AI phone calls, email, SMS, WhatsApp, and other communications, used to accomplish and automate the learner's own processes.
+Unsolicited bulk messaging is out of scope.
+
+### Bots
+
+Creating bots.
+Understanding a bot's tech stack.
+
+## Revenue
+
+The business starts with free gateway courses.
+A progression then leads to paid courses.
+Paid courses may be sold directly, offered through affiliate sales of other products and services, or both.
+Prices, revenue targets, and chosen partners are TBD.
+
+## Learning experience
+
+A course can carry its own plugins.
+Named needs are a video player, embedded AI chat, prompt practice that stays on the site, and other tools that depend on the course.
+The desired outcome is frictionless practice, including a learner signing up or logging into an AI platform from inside the site.
+That login is a goal to validate.
+It is not a promise that an arbitrary platform allows an embed, and it is not permission to reuse a consumer subscription inside the site.
+Possibilities to validate are an API-based integration, and OAuth or embeds where the provider supports them.
+Still open: costs, rate limits, account linking, privacy, learner data and secrets, vendor terms, and implementation architecture.
+This document chooses no stack and no vendor.
+
+## Principles
+
+Teach who, why, how, and what before the paid step.
+Keep free gateway learning ahead of payment.
+Put community membership on signup, and leave its benefits unnamed until they are decided.
+Keep purchasing automation and communications inside user-authorised work.
+Leave prices, partners, numeric targets, and vendors unset until the founder sets them.
+Speak of the website as intent until the site exists.
+
+## Non-goals
+
+Courses, signup, community features, checkout, outreach, and AI connectors are absent from this repository today.
+This file is not a privacy policy, a terms of use, or a legal sign-off.
+It is not an implementation spec, a page map, or a stack choice.
+Bypassing platform controls, reusing a consumer AI subscription inside the site, and treating ordinary signup as consent to sales email are out of scope.
+Unsolicited bulk messaging is out of scope.
+
+## Proposed sequencing
+
+Proposal for confirmation, not a commitment.
+The first slice is one free gateway course, one on-site practice task, email signup, and community membership with benefits still TBD.
+The recommended consent guardrail above belongs in that slice only if it is accepted.
+Later expansion is the fuller course families, direct paid courses, affiliate tools, sales outreach to people who accepted marketing email, richer course plugins, and any in-site AI login that survives the open questions in Learning experience.
+
+## Proposed measures
+
+Proposal for confirmation, not a commitment.
+No numbers are set.
+Questions worth answering later: whether a newcomer can explain who, why, how, and what after the gateway course; whether they finish an on-site practice task; whether signup, marketing consent, and community membership stay distinct; and whether free learners continue into a paid course or a relevant affiliate tool.
+
+A change aligns when it helps this audience understand AI and practise toward their own goals, keeps the free gateway ahead of payment, keeps community membership on signup, and keeps purchasing and communications inside authorised use.
+A change should be resisted when it treats this document as the current codebase, sets a price or a partner the founder has not set, promises that any AI platform can be embedded or that a consumer subscription can be reused here, drops community membership from signup, or widens purchasing and messaging into bypassing controls or unsolicited bulk messaging.
