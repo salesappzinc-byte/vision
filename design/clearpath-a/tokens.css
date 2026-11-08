@@ -1,0 +1,57 @@
+/* PROVISIONAL — not exported from Paper get_tokens (MCP limit).
+   From Paper get_basic_info: --color-a-fog, --color-a-white, --color-a-navy, --color-a-ink, --color-a-sea, --color-a-mute
+   Inferred (not from Paper): --color-a-border, --color-a-sea-tint, --color-a-warn-bg, --color-a-warn-border, --color-a-warn-ink,
+   --font-display, --font-ui, all --space-*, --radius-*, --text-*, --line-*, --letter-* */
+
+:root {
+  --color-a-fog: #eef2f5;
+  --color-a-white: #ffffff;
+  --color-a-navy: #16324f;
+  --color-a-ink: #0f1c2e;
+  --color-a-sea: #5b8c85;
+  --color-a-mute: #6b7c8a;
+  --color-a-border: #d5dee6;
+  --color-a-sea-tint: #e7f1ee;
+  --color-a-warn-bg: #fff8e8;
+  --color-a-warn-border: #e6d7a8;
+  --color-a-warn-ink: #8a6a1f;
+
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-ui: "IBM Plex Sans", system-ui, sans-serif;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+
+  --text-xs: 10px;
+  --text-sm: 11px;
+  --text-base: 14px;
+  --text-md: 15px;
+  --text-lg: 16px;
+  --text-xl: 18px;
+  --text-2xl: 22px;
+  --text-3xl: 28px;
+  --text-4xl: 34px;
+
+  --line-tight: 1.12;
+  --line-snug: 1.45;
+  --line-normal: 1.5;
+
+  --letter-tight: -0.025em;
+  --letter-wide: 0.06em;
+  --letter-wider: 0.08em;
+
+  --color-a-night: #0b1220;
+  --color-a-night-card: #152033;
+  --color-a-on-night: #f4f7fb;
+}

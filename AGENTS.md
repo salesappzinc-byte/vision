@@ -2,6 +2,13 @@
 
 vision: this file is the always-loaded memory for agents working in this repo.
 It is kept short on purpose - every line here is paid on every session.
+Intended product direction: VISION.md, an AI education and monetization website.
+Current implementation in this checkout: the `/vision` skill package under `skills/vision/`.
+VISION.md does not describe that package.
+Course research and a proposed roadmap: docs/course-research.md. It is not a build authorization.
+Gateway course draft: courses/gateway/index.md. Written only. Not a recording and not a build authorization.
+Project plan: PROJECT_PLAN.md.
+Creator marketplace research: docs/creator-marketplace-research.md. It is a proposal, not a build authorization, and it sets no commission or payment provider.
 
 ## Learnings
 

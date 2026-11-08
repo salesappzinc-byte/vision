@@ -56,6 +56,15 @@ For what the result looks like, see
 [firstmate's VISION.md](https://github.com/kunchenguid/firstmate/blob/main/VISION.md) -
 produced by exactly this process.
 
+The `/vision` skill documented on this page is what the repository currently implements.
+[VISION.md](VISION.md) states a different, intended product, an AI education and monetization website, which this repository does not yet build.
+[docs/course-research.md](docs/course-research.md) is a sourced research note and a proposed course roadmap.
+It does not confirm a launch segment or a course order, and it is not software in this repository.
+[courses/index.md](courses/index.md) lists the free gateway and the unpaid drafts. The gateway text is in [courses/gateway/index.md](courses/gateway/index.md). None of it is recorded, piloted, or for sale.
+[PROJECT_PLAN.md](PROJECT_PLAN.md) records current status and what is blocked.
+[docs/creator-marketplace-research.md](docs/creator-marketplace-research.md) is a sourced note on members uploading courses and earning from purchases.
+Commission, payout timing, the payment provider, and the legal seller are undecided there, and that note is not software either.
+
 ## Quick Start
 
 ```sh
