@@ -7,6 +7,7 @@ Current implementation in this checkout: the `/vision` skill package under `skil
 VISION.md does not describe that package.
 Course research and a proposed roadmap: docs/course-research.md. It is not a build authorization.
 Gateway course draft: courses/gateway/index.md. Written only. Not a recording and not a build authorization.
+Project plan: PROJECT_PLAN.md.
 Creator marketplace research: docs/creator-marketplace-research.md. It is a proposal, not a build authorization, and it sets no commission or payment provider.
 
 ## Learnings

@@ -49,6 +49,8 @@ The [Personal AI Toolkit](toolkit.md): a plain-language card, 10 reusable prompt
 
 Recording and an unsent pilot plan: [production checklist](production-checklist.md). Scripts are draft transcripts, not captions. Nothing has been recorded or piloted.
 
+Status and blockers: [PROJECT_PLAN.md](../../PROJECT_PLAN.md).
+
 ## How to talk about this draft
 
 - Do not say the lessons have been recorded, tested with learners, or published.
