@@ -1,6 +1,6 @@
 # Paid path draft: honest product video
 
-**Status:** Written draft, 8 November 2026. Not recorded. Not for sale. Not a finished course.
+**Status:** Written draft, 8 November 2026. Unapproved. Not recorded. Not for sale. Not a finished course. Outlines for smaller video projects, also unapproved, are in [outline-approval.md](outline-approval.md).
 
 People who finished the free gateway can practise a short product or creator clip without pretending a customer spoke. A later course may be sold only after the owner sets a price. This folder does not do that.
 

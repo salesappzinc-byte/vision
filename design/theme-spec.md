@@ -10,6 +10,8 @@
 
 **Credibility:** show the real lesson name, a draft label, and a tool-cost warning. No fake ratings, user counts, or testimonials.
 
+**Learning tone:** plain and guided. A free first win, then a paid project the person can decline, then an optional later skill. No earnings countdown and no locked next step. The mock was not restyled in the outline pass.
+
 **What is on screen:** `a-course-detail-mobile.html` is a static course frame. `a-creator-workspace-mobile.html` is a static review queue. Neither accepts a file or plays video.
 
 **Contrast:** body copy is ink on white. Dark workspace copy is white on ink. The muted grey is for secondary labels only. This is not a finished accessibility audit.

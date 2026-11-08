@@ -12,7 +12,8 @@ Local design or app work that was never committed is not in this checkout, so it
 | This branch | Vision, course research, creator-marketplace research, written gateway draft, and a static Clearpath mobile course-detail mock under `design/clearpath-a/`. |
 | Learner web app | Absent. The HTML mock is a visual frame. It does not navigate lessons or run a quiz. |
 | Gateway course | Written draft. Not recorded, captioned, piloted, or published. |
-| Paid and advanced drafts | Written 8 Nov 2026. Not for sale. Not recorded. |
+| Paid and advanced drafts | Written 8 Nov 2026. Not for sale. Not recorded. The video pack is unapproved. |
+| Video mini-course outlines | `courses/paid/video/outline-approval.md`, 8 Nov 2026. Awaiting approval. Full lessons not started. |
 | Course update routine | Parent owns Monday 09:00 SGT. No run has happened in this repo. |
 | Creator media | Contract and tests only. No backend. |
 | Visual mock | Light course screen plus a static dark review queue. Not a live upload. |

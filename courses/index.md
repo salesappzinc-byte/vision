@@ -5,7 +5,8 @@
 | Path | Kind | File |
 | --- | --- | --- |
 | Free gateway | Written lessons | [gateway/index.md](gateway/index.md) |
-| Honest product video | Paid-path draft | [paid/video/index.md](paid/video/index.md) |
+| Honest product video | Paid-path draft, unapproved, not for sale | [paid/video/index.md](paid/video/index.md) |
+| Video mini-course outlines | Awaiting approval. Not lessons yet | [paid/video/outline-approval.md](paid/video/outline-approval.md) |
 | Small website | Paid-path draft | [paid/website/index.md](paid/website/index.md) |
 | One repeating task | Paid-path draft | [paid/automation/index.md](paid/automation/index.md) |
 | Later topics | Briefs only | [advanced/briefs.md](advanced/briefs.md) |
