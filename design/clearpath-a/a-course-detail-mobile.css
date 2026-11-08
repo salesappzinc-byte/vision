@@ -278,3 +278,51 @@ body {
   color: var(--color-a-ink);
   padding: 12px var(--space-5);
 }
+
+/* Creator workspace. Static states only. */
+.frame-night {
+  background: var(--color-a-night);
+  color: var(--color-a-on-night);
+}
+.frame-night .nav,
+.frame-night .card {
+  background: var(--color-a-night-card);
+  color: var(--color-a-on-night);
+  border-color: transparent;
+}
+.frame-night h1,
+.frame-night h2,
+.frame-night p {
+  color: var(--color-a-on-night);
+}
+.queue {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: 0 var(--space-4) var(--space-6);
+}
+.queue-item {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  background: var(--color-a-night-card);
+}
+.pill {
+  align-self: flex-start;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: var(--color-a-sea);
+  color: var(--color-a-night);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+.dead-control {
+  margin: 0 var(--space-4) var(--space-6);
+  padding: var(--space-4);
+  border: 1px dashed var(--color-a-sea);
+  border-radius: var(--radius-lg);
+  color: var(--color-a-on-night);
+  font-size: var(--text-base);
+}

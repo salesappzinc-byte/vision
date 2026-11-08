@@ -90,13 +90,44 @@ def _broken_links(repo: Path, path: Path) -> list[str]:
     return errors
 
 
+def check_catalog(repo: Path) -> list[str]:
+    errors: list[str] = []
+    courses = repo / "courses"
+    required = [
+        courses / "index.md",
+        courses / "inventory.md",
+        courses / "advanced" / "briefs.md",
+        courses / "shared" / "worksheets.md",
+    ]
+    for path in ("video", "website", "automation"):
+        base = courses / "paid" / path
+        required.extend([base / "index.md", base / "lessons.md"])
+        first = next(base.glob("01-*.md"), None)
+        if first is None:
+            errors.append(f"{path} missing script-ready lesson 01")
+        else:
+            required.append(first)
+    for path in required:
+        if not path.is_file():
+            errors.append(f"missing {path.relative_to(repo)}")
+            continue
+        text = path.read_text(encoding="utf-8")
+        if path.name == "index.md" and path.parent.parent.name == "paid":
+            if "Not for sale" not in text:
+                errors.append(f"{path} must say it is not for sale")
+        if path.name.startswith("01-") and "## Exercise" not in text:
+            errors.append(f"{path.name} missing exercise")
+        errors.extend(_broken_links(repo, path))
+    return errors
+
+
 def main() -> int:
     repo = Path(__file__).resolve().parents[1]
-    errors = check(repo)
+    errors = check(repo) + check_catalog(repo)
     if errors:
         print("\n".join(errors))
         return 1
-    print("gateway content ok: 7 lessons, required sections, internal links")
+    print("course content ok: gateway, paid drafts, links")
     return 0
 
 

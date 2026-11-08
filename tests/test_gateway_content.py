@@ -5,11 +5,14 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO))
 
-from scripts.check_gateway_content import check, lesson_files  # noqa: E402
+from scripts.check_gateway_content import check, check_catalog, lesson_files  # noqa: E402
 
 class GatewayContentTest(unittest.TestCase):
     def test_live_draft_has_no_structural_errors(self):
         self.assertEqual(check(REPO), [])
+
+    def test_paid_drafts_are_linked_and_not_for_sale(self):
+        self.assertEqual(check_catalog(REPO), [])
 
     def test_seven_lesson_files(self):
         names = [path.name for path in lesson_files(REPO / "courses" / "gateway")]

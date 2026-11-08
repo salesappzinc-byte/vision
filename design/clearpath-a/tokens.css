@@ -50,4 +50,8 @@
   --letter-tight: -0.025em;
   --letter-wide: 0.06em;
   --letter-wider: 0.08em;
+
+  --color-a-night: #0b1220;
+  --color-a-night-card: #152033;
+  --color-a-on-night: #f4f7fb;
 }
