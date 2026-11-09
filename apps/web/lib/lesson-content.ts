@@ -24,14 +24,17 @@ export const lessonSections: LessonSection[] = [
       "A chat page writes a new reply from your message (a prompt). It is not a person and does not know your life unless you type it.",
       "Who it is for: someone who understands the task enough to check the words. Why people use it: a first draft is easier to edit than a blank page.",
       "What it is not: a colleague, a checker you can skip, or a machine that owes you income. A smooth paragraph can still be false.",
+      "The review video above shows the same judgment idea with a green ceramic mug (350 ml): facts in, you review what comes out. The written exercise below uses Sam/Nia’s folder examples—you apply the same principle in your own words.",
     ],
     examples: [
-      "Use Sam and Nia’s model cards on this page as patterns—not words to copy as if they were yours.",
+      "Video: vague vs clearer mug prompts (annotated screenshots, not live recording).",
+      "Written: Sam and Nia model cards on this page—not words to copy as yours.",
     ],
     exercise: [
+      "Optional: watch the review video, then continue the written exercise (video is not the whole exercise).",
       "Read Sam’s and Nia’s model cards and the labelled sample reply on this page.",
       "Without a chat tool, write five to eight lines: who, why, how, what it is not, and one goal you can finish.",
-      "Optional: circle invented details in the sample reply, or use the optional prompt with an external chat page you are allowed to use (any fee is yours, not course tuition).",
+      "You may relate your goal to the mug lesson (clear facts in, edit what comes out) or to Sam/Nia’s folder examples.",
       "Type your own card into the toolkit plain-language fields on this device.",
     ],
     completionCriterion:

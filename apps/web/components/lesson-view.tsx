@@ -5,8 +5,8 @@ import { LessonSidebar } from "@/components/lesson-sidebar";
 import { LocalStorageBanner } from "@/components/local-storage-banner";
 import { VideoSlot } from "@/components/video-slot";
 import { MascotSlot } from "@/components/mascot-slot";
-import { Lesson1DialogueCallout } from "@/components/lesson1-dialogue-callout";
 import { LessonReferenceBlocks } from "@/components/lesson-reference-blocks";
+import { videoConfigForLesson } from "@/lib/lesson-media";
 import { ButtonLink } from "@/components/ui-button";
 import { useGatewayStore } from "@/components/gateway-store";
 import { adjacentLessons, gatewayCourse } from "@/lib/gateway-course";
@@ -31,6 +31,7 @@ export function LessonView({ section }: LessonViewProps) {
   const { previous, next } = adjacentLessons(section.slug);
   const done = hydrated && isLessonComplete(section.slug);
   const note = state.lessonNotes[section.slug] ?? "";
+  const video = videoConfigForLesson(section.slug);
 
   return (
     <>
@@ -47,7 +48,10 @@ export function LessonView({ section }: LessonViewProps) {
         <article className="lesson-main">
           <p className="draft-banner" role="status">
             Review draft — not final published lesson. Examples on this page are
-            self-contained; lesson video is not available yet.
+            self-contained.
+            {video
+              ? " Lesson 1 includes a review video (annotated ChatGPT screenshots—not live practice)."
+              : " Lesson video is not available yet on this page."}
           </p>
           <LocalStorageBanner />
           <span className="badge-free">Free · local prototype</span>
@@ -69,14 +73,13 @@ export function LessonView({ section }: LessonViewProps) {
             <strong>You finish with:</strong> {section.outcome}
           </p>
 
-          {section.slug === "1" ? (
-            <>
-              <MascotSlot />
-              <Lesson1DialogueCallout />
-            </>
-          ) : null}
+          {section.slug === "1" ? <MascotSlot /> : null}
 
-          <VideoSlot lessonTitle={section.title} />
+          <VideoSlot
+            lessonTitle={section.title}
+            lessonSlug={section.slug}
+            video={video}
+          />
 
           <LessonReferenceBlocks slug={section.slug} />
 

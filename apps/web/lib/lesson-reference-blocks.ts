@@ -11,6 +11,12 @@ export const lessonReferenceBlocks: Record<string, ReferenceBlock[]> = {
   "1": [
     {
       type: "note",
+      title: "Video vs written exercise",
+      body:
+        "The review video uses a practice mug: green ceramic, 350 ml. The worksheets below use Sam’s folders or Nia’s book swap. Same skill: give clear facts, notice fluent extras, keep what you can defend. Finish the toolkit card yourself—the video does not mark you complete.",
+    },
+    {
+      type: "note",
       title: "Fictional characters in this course",
       body:
         "Sam Okonkwo writes about labelled practice folders (Shop A, B, C)—not real bookkeeping or tax. Nia Adeyemi plans a neighbourhood book swap with no library agreement and no date set. Neither person is real.",

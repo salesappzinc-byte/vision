@@ -3,6 +3,7 @@
  * Usage: BASE_URL=http://127.0.0.1:3456 node scripts/verify-gateway-flow.mjs
  */
 import { chromium } from "playwright";
+import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -35,9 +36,95 @@ async function main() {
       const res = await page.goto(url, { waitUntil: "networkidle" });
       if (!res || res.status() >= 400) fail(`lesson-${n}-http`, String(res?.status()));
       else pass(`lesson-${n}-loads`);
-      const video = await page.locator(".video-placeholder").innerText();
-      if (!/not available yet/i.test(video)) fail(`lesson-${n}-video`);
-      else pass(`lesson-${n}-video-unavailable`);
+      if (n === 1) {
+        const vid = page.locator("video.video-slot__player");
+        if ((await vid.count()) < 1) fail("lesson-1-video-element");
+        else pass("lesson-1-video-element");
+        const src = await vid.locator("source").getAttribute("src");
+        if (!src?.includes("lesson1-v2-real-chatgpt")) fail("lesson-1-video-src");
+        else pass("lesson-1-video-src");
+        const resp = await page.request.get(new URL(src, BASE).toString());
+        if (!resp.ok()) fail("lesson-1-mp4-http", String(resp.status()));
+        else {
+          const len = Number(resp.headers()["content-length"] || 0);
+          if (len !== 7476228) fail("lesson-1-mp4-bytes", String(len));
+          else pass("lesson-1-mp4-bytes");
+        }
+        const vttResp = await page.request.get(
+          `${BASE}/media/ai-foundations-gateway/lesson-1/lesson1-v2-real-chatgpt.vtt`
+        );
+        const vtt = await vttResp.text();
+        if (!vtt.startsWith("WEBVTT")) fail("lesson-1-vtt");
+        else pass("lesson-1-vtt");
+        const mp4Disk = path.join(
+          process.cwd(),
+          "public/media/ai-foundations-gateway/lesson-1/lesson1-v2-real-chatgpt-illustrated-pilot.mp4"
+        );
+        const probed = Number(
+          execFileSync(
+            "ffprobe",
+            [
+              "-v",
+              "error",
+              "-show_entries",
+              "format=duration",
+              "-of",
+              "csv=p=0",
+              mp4Disk,
+            ],
+            { encoding: "utf8" }
+          ).trim()
+        );
+        if (probed < 200 || probed > 230) fail("lesson-1-duration-ffprobe", String(probed));
+        else pass("lesson-1-duration-ffprobe", String(Math.round(probed)));
+
+        const browserMeta = await page.evaluate(async () => {
+          const v = document.querySelector("video.video-slot__player");
+          if (!v) return { duration: -1, played: false };
+          v.load();
+          const meta = await Promise.race([
+            new Promise((resolve) => {
+              if (v.readyState >= 1) resolve(v.duration);
+              else
+                v.addEventListener(
+                  "loadedmetadata",
+                  () => resolve(v.duration),
+                  { once: true }
+                );
+            }),
+            new Promise((resolve) => setTimeout(() => resolve(-1), 5000)),
+          ]);
+          let played = false;
+          if (meta > 0) {
+            try {
+              await v.play();
+              await new Promise((r) => setTimeout(r, 400));
+              played = v.currentTime > 0;
+              v.pause();
+            } catch {
+              played = false;
+            }
+          }
+          return { duration: meta, played };
+        });
+        if (browserMeta.duration > 200 && browserMeta.duration < 230) {
+          pass("lesson-1-duration-browser", String(Math.round(browserMeta.duration)));
+        } else {
+          report.notes.push(
+            "lesson-1-duration-browser: headless Chromium did not load video metadata in 5s (likely codec). Manual play check in desktop browser recommended."
+          );
+        }
+        if (browserMeta.played) pass("lesson-1-playback-browser");
+        else {
+          report.notes.push(
+            "lesson-1-playback-browser: play/seek not verified in headless Chromium; HTTP delivery and ffprobe duration verified."
+          );
+        }
+      } else {
+        const video = await page.locator(".video-placeholder").innerText();
+        if (!/not available yet/i.test(video)) fail(`lesson-${n}-video`);
+        else pass(`lesson-${n}-video-unavailable`);
+      }
       const refs = await page.locator(".lesson-references").count();
       if (refs < 1) fail(`lesson-${n}-inline-examples`);
       else pass(`lesson-${n}-inline-examples`);

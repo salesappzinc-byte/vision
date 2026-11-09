@@ -620,11 +620,40 @@ textarea:focus-visible {
   color: var(--color-a-mute);
 }
 
+.video-slot__frame {
+  width: 100%;
+  max-width: 100%;
+  background: #000;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
 .video-slot__player {
   width: 100%;
-  max-height: 360px;
+  height: 100%;
+  display: block;
   border-radius: var(--radius-lg);
   background: #000;
+}
+
+.video-slot__notice {
+  margin-bottom: var(--space-3);
+}
+
+.video-transcript-details {
+  margin-top: var(--space-4);
+}
+
+.video-transcript-pre {
+  white-space: pre-wrap;
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  line-height: var(--line-normal);
+  max-height: 280px;
+  overflow: auto;
+  padding: var(--space-3);
+  background: var(--color-a-fog);
+  border-radius: var(--radius-md);
 }
 
 .mascot-slot {

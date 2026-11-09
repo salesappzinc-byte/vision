@@ -28,6 +28,10 @@ npm run lint
 
 That points to an **environment-specific dev/HMR issue**, not a proven defect in the production build. If `npm run dev` misbehaves on your PC, use `npm run build && npm run start` for a reliable preview.
 
+## Lesson 1 review video
+
+Served from `public/media/ai-foundations-gateway/lesson-1/` (single MP4 + VTT). Provenance: `MEDIA-PROVENANCE.md` in that folder. Bulk lesson hosting is **not** implemented — use CDN/object storage before production scale.
+
 ## Scope limits
 
-No signup, cloud save, checkout, lesson video, or live AI practice in this prototype.
+No signup, cloud save, checkout, in-site live AI practice. Lessons 2–7 have no video yet. Lesson 1 has a **review-draft** video only.
