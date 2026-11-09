@@ -94,14 +94,25 @@ export function serializePersistedState(state: GatewayPersistedState): string {
 /** Browser storage adapter (testable via injectable StorageLike). */
 export type StorageLike = Pick<Storage, "getItem" | "setItem" | "removeItem">;
 
+export type StorageLoadResult = {
+  state: GatewayPersistedState;
+  /** Storage API was reachable on load (read attempted). */
+  available: boolean;
+  /** Valid persisted snapshot was loaded. */
+  fromStorage: boolean;
+  /** A value existed but was invalid JSON or schema — defaults used. */
+  corruptOrInvalid: boolean;
+};
+
 export function loadFromStorage(
   storage: StorageLike | null | undefined
-): { state: GatewayPersistedState; available: boolean; fromStorage: boolean } {
+): StorageLoadResult {
   if (!storage) {
     return {
       state: createDefaultPersistedState(),
       available: false,
       fromStorage: false,
+      corruptOrInvalid: false,
     };
   }
   try {
@@ -111,6 +122,7 @@ export function loadFromStorage(
         state: createDefaultPersistedState(),
         available: true,
         fromStorage: false,
+        corruptOrInvalid: false,
       };
     }
     const parsed = parsePersistedState(raw);
@@ -119,14 +131,21 @@ export function loadFromStorage(
         state: createDefaultPersistedState(),
         available: true,
         fromStorage: false,
+        corruptOrInvalid: true,
       };
     }
-    return { state: parsed, available: true, fromStorage: true };
+    return {
+      state: parsed,
+      available: true,
+      fromStorage: true,
+      corruptOrInvalid: false,
+    };
   } catch {
     return {
       state: createDefaultPersistedState(),
       available: false,
       fromStorage: false,
+      corruptOrInvalid: false,
     };
   }
 }

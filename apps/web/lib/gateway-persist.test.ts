@@ -55,4 +55,37 @@ describe("gateway persistence", () => {
   it("uses stable storage key", () => {
     expect(STORAGE_KEY).toBe("clearpath-gateway-v1");
   });
+
+  it("flags corrupt saved JSON on load", () => {
+    const storage = mockStorage();
+    storage.setItem(STORAGE_KEY, "{not-valid-json");
+    const loaded = loadFromStorage(storage);
+    expect(loaded.corruptOrInvalid).toBe(true);
+    expect(loaded.fromStorage).toBe(false);
+    expect(loaded.available).toBe(true);
+  });
+
+  it("returns unavailable when getItem throws", () => {
+    const storage = {
+      getItem: () => {
+        throw new DOMException("denied", "SecurityError");
+      },
+      setItem: () => {},
+      removeItem: () => {},
+    };
+    const loaded = loadFromStorage(storage);
+    expect(loaded.available).toBe(false);
+    expect(loaded.corruptOrInvalid).toBe(false);
+  });
+
+  it("returns false when setItem throws", () => {
+    const storage = {
+      getItem: () => null,
+      setItem: () => {
+        throw new DOMException("quota", "QuotaExceededError");
+      },
+      removeItem: () => {},
+    };
+    expect(saveToStorage(storage, createDefaultPersistedState())).toBe(false);
+  });
 });

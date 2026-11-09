@@ -4,7 +4,7 @@ import {
   createContext,
   useCallback,
   useContext,
-  useEffect,
+  useLayoutEffect,
   useMemo,
   useState,
   type ReactNode,
@@ -19,12 +19,17 @@ import {
   unmarkLessonComplete,
   type GatewayPersistedState,
 } from "@/lib/gateway-persist";
+import { resolveStorageStatus } from "@/lib/storage-status";
 import type { ToolkitState } from "@/lib/toolkit-types";
 
 type GatewayStore = {
   state: GatewayPersistedState;
   storageAvailable: boolean;
   hydrated: boolean;
+  persistToBrowser: boolean;
+  loadedFromStorage: boolean;
+  corruptRecovered: boolean;
+  storageStatus: ReturnType<typeof resolveStorageStatus>;
   updateToolkit: (patch: Partial<ToolkitState>) => void;
   setLessonNote: (slug: string, note: string) => void;
   completeLesson: (slug: string) => void;
@@ -49,23 +54,40 @@ export function GatewayStoreProvider({ children }: { children: ReactNode }) {
     createDefaultPersistedState
   );
   const [storageAvailable, setStorageAvailable] = useState(false);
+  const [persistToBrowser, setPersistToBrowser] = useState(true);
+  const [loadedFromStorage, setLoadedFromStorage] = useState(false);
+  const [corruptRecovered, setCorruptRecovered] = useState(false);
   const [hydrated, setHydrated] = useState(false);
 
-  useEffect(() => {
-    // One-time hydration from localStorage (client-only).
+  useLayoutEffect(() => {
     const loaded = loadFromStorage(getBrowserStorage());
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- intentional mount hydrate
+    /* eslint-disable react-hooks/set-state-in-effect -- client storage hydrate */
     setState(loaded.state);
     setStorageAvailable(loaded.available);
+    setLoadedFromStorage(loaded.fromStorage);
+    setCorruptRecovered(loaded.corruptOrInvalid);
+    setPersistToBrowser(loaded.available);
     setHydrated(true);
+    /* eslint-enable react-hooks/set-state-in-effect */
   }, []);
 
   const persist = useCallback(
     (updater: (prev: GatewayPersistedState) => GatewayPersistedState) => {
       setState((prev) => {
         const next = updater(prev);
-        const ok = saveToStorage(getBrowserStorage(), next);
-        if (!ok) setStorageAvailable(false);
+        const storage = getBrowserStorage();
+        if (!storage) {
+          setPersistToBrowser(false);
+          return next;
+        }
+        const ok = saveToStorage(storage, next);
+        if (!ok) {
+          setPersistToBrowser(false);
+        } else {
+          setPersistToBrowser(true);
+          setLoadedFromStorage(true);
+          setCorruptRecovered(false);
+        }
         return next;
       });
     },
@@ -108,10 +130,14 @@ export function GatewayStoreProvider({ children }: { children: ReactNode }) {
 
   const resetAll = useCallback(() => {
     const storage = getBrowserStorage();
-    resetStorage(storage);
+    const cleared = resetStorage(storage);
     const fresh = createDefaultPersistedState();
     setState(fresh);
-    setStorageAvailable(loadFromStorage(storage).available);
+    const loaded = loadFromStorage(storage);
+    setStorageAvailable(loaded.available);
+    setLoadedFromStorage(false);
+    setCorruptRecovered(false);
+    setPersistToBrowser(loaded.available && cleared);
   }, []);
 
   const isLessonComplete = useCallback(
@@ -119,11 +145,23 @@ export function GatewayStoreProvider({ children }: { children: ReactNode }) {
     [state.completedLessons]
   );
 
+  const storageStatus = resolveStorageStatus({
+    hydrated,
+    storageAvailable,
+    persistToBrowser,
+    loadedFromStorage,
+    corruptRecovered,
+  });
+
   const value = useMemo(
     () => ({
       state,
       storageAvailable,
       hydrated,
+      persistToBrowser,
+      loadedFromStorage,
+      corruptRecovered,
+      storageStatus,
       updateToolkit,
       setLessonNote,
       completeLesson,
@@ -135,6 +173,10 @@ export function GatewayStoreProvider({ children }: { children: ReactNode }) {
       state,
       storageAvailable,
       hydrated,
+      persistToBrowser,
+      loadedFromStorage,
+      corruptRecovered,
+      storageStatus,
       updateToolkit,
       setLessonNote,
       completeLesson,

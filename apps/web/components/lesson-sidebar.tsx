@@ -4,10 +4,11 @@ import Link from "next/link";
 import { gatewayCourse } from "@/lib/gateway-course";
 import { lessonPath, toolkitPath } from "@/lib/paths";
 import { useGatewayStore } from "@/components/gateway-store";
+import { completionLabelSuffix, progressNoteForStatus } from "@/lib/storage-status";
 
 export function LessonSidebar({ currentSlug }: { currentSlug: string }) {
-  const { isLessonComplete, hydrated, state, storageAvailable } =
-    useGatewayStore();
+  const { isLessonComplete, hydrated, state, storageStatus } = useGatewayStore();
+  const tabOnly = completionLabelSuffix(storageStatus);
   const completed = state.completedLessons.length;
   const total = gatewayCourse.lessons.length;
 
@@ -32,7 +33,10 @@ export function LessonSidebar({ currentSlug }: { currentSlug: string }) {
                 <span>
                   {lesson.title}
                   {done ? (
-                    <span className="lesson-nav__done"> · Complete (you)</span>
+                    <span className="lesson-nav__done">
+                      {" "}
+                      · Complete (you){tabOnly}
+                    </span>
                   ) : null}
                 </span>
               </Link>
@@ -54,9 +58,7 @@ export function LessonSidebar({ currentSlug }: { currentSlug: string }) {
           </span>
         </div>
         <p className="progress-block__note">
-          {storageAvailable
-            ? "Marked complete only when you choose—not by AI."
-            : "Progress cannot be saved on this browser."}
+          {progressNoteForStatus(storageStatus)}
         </p>
       </div>
     </aside>

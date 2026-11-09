@@ -22,7 +22,8 @@ import {
 } from "@/lib/toolkit-types";
 
 export function ToolkitView() {
-  const { state, updateToolkit, resetAll, storageAvailable } = useGatewayStore();
+  const { state, updateToolkit, resetAll, storageAvailable, storageStatus } =
+    useGatewayStore();
   const toolkit = state.toolkit;
   const [resetArmed, setResetArmed] = useState(false);
 
@@ -411,6 +412,13 @@ export function ToolkitView() {
 
           <section className="card">
             <h2 className="lesson-h2">Export and reset</h2>
+            <p className="field-note">
+              Downloads reflect this tab&apos;s worksheet (including in-memory
+              edits).{" "}
+              {storageStatus === "memory-only" || storageStatus === "unavailable"
+                ? "Browser storage is not saving—export if you need a copy."
+                : "Browser storage does not replace export."}
+            </p>
             <ButtonRow>
               <button type="button" className="btn btn--primary" onClick={onExportMd}>
                 Download Markdown

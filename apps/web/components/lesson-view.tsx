@@ -11,6 +11,7 @@ import { useGatewayStore } from "@/components/gateway-store";
 import { adjacentLessons, gatewayCourse } from "@/lib/gateway-course";
 import type { LessonSection } from "@/lib/lesson-content";
 import { gatewayPath, lessonPath, toolkitPath } from "@/lib/paths";
+import { completionLabelSuffix } from "@/lib/storage-status";
 
 type LessonViewProps = {
   section: LessonSection;
@@ -24,6 +25,7 @@ export function LessonView({ section }: LessonViewProps) {
     hydrated,
     setLessonNote,
     state,
+    storageStatus,
   } = useGatewayStore();
   const { previous, next } = adjacentLessons(section.slug);
   const done = hydrated && isLessonComplete(section.slug);
@@ -139,10 +141,21 @@ export function LessonView({ section }: LessonViewProps) {
             <p className="field-note">
               Completion appears only after you deliberately mark this lesson—not
               because AI evaluated your work.
+              {storageStatus === "memory-only" ||
+              storageStatus === "unavailable" ? (
+                <>
+                  {" "}
+                  Progress in this tab is{" "}
+                  <strong>not written to browser storage</strong>.
+                </>
+              ) : null}
             </p>
             {done ? (
               <LessonCompleteRow>
-                <span className="badge-free">You marked lesson {section.slug} complete</span>
+                <span className="badge-free">
+                  You marked lesson {section.slug} complete
+                  {completionLabelSuffix(storageStatus)}
+                </span>
                 <button
                   type="button"
                   className="btn btn--ghost"
