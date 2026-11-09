@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1440" />
+  <title>Clearpath · A · Creator Upload · Desktop</title>
+  <link rel="stylesheet" href="tokens.css" />
+  <link rel="stylesheet" href="a-creator-upload-desktop.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="frame" aria-label="A · Creator Upload · Desktop">
+    <nav class="nav">
+      <div class="nav-left">
+        <span class="logo">Clearpath</span>
+        <span class="breadcrumb">Creator studio · New course draft</span>
+      </div>
+      <span class="status-pill">Private draft — not public</span>
+    </nav>
+    <div class="page">
+      <header class="page-header">
+        <h1>Upload a course</h1>
+        <p>Drafts stay private until review. Only an approved version can go public. Alex Rivera (sample) shown as placeholder creator identity.</p>
+      </header>
+      <form class="form-grid" action="#" onsubmit="return false">
+        <div class="field full">
+          <label for="title">Course title</label>
+          <input id="title" type="text" placeholder="Plain-language title" />
+        </div>
+        <div class="field full">
+          <label for="desc">Description</label>
+          <textarea id="desc" rows="4" placeholder="What the learner will be able to do when they finish — in plain English."></textarea>
+        </div>
+        <div class="field">
+          <label for="audience">Who it is for</label>
+          <input id="audience" type="text" placeholder="Beginners, solo operators, etc." />
+        </div>
+        <div class="field">
+          <label for="prereq">Prerequisites</label>
+          <input id="prereq" type="text" placeholder="What they should know first" />
+        </div>
+        <div class="field full">
+          <label for="lessons">Lesson list</label>
+          <textarea id="lessons" rows="5" placeholder="One outcome per lesson, in order. Include a final project lesson."></textarea>
+        </div>
+        <div class="field">
+          <label for="price">Proposed price</label>
+          <input id="price" type="text" placeholder="Tuition TBD — enter when approved" />
+          <p class="hint">Tuition is separate from any required paid tools you list below.</p>
+        </div>
+        <div class="field">
+          <label for="cover">Cover image</label>
+          <div class="upload-box">Drop cover image or browse</div>
+        </div>
+        <div class="field full">
+          <label for="paid-tools">Required paid tools (disclosed separately)</label>
+          <textarea id="paid-tools" rows="3" placeholder="Name each external tool, what it is for, and that cost is the learner’s — not hidden in tuition."></textarea>
+        </div>
+        <div class="field full">
+          <label for="materials">Supporting materials</label>
+          <div class="upload-box">Video, captions/transcript, project files — upload when ready</div>
+        </div>
+        <fieldset class="checklist full">
+          <legend>Publish checklist</legend>
+          <label><input type="checkbox" /> Original work — I have rights to all material</label>
+          <label><input type="checkbox" /> AI-assisted sections reviewed for accuracy</label>
+          <label><input type="checkbox" /> Accessible presentation (captions or transcript planned)</label>
+          <label><input type="checkbox" /> Sample lesson and project tested in preview</label>
+          <label><input type="checkbox" /> Required paid tools listed separately from course price</label>
+          <label><input type="checkbox" /> I understand only the approved version publishes</label>
+        </fieldset>
+        <div class="actions full">
+          <button type="button" class="btn btn-secondary">Save draft</button>
+          <button type="button" class="btn btn-primary">Submit for review</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
