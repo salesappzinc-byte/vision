@@ -9,7 +9,8 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "verify:flow": "node scripts/verify-gateway-flow.mjs"
+    "verify:flow": "node scripts/verify-gateway-flow.mjs",
+    "verify:lesson1-playback": "node scripts/diagnose-lesson1-video.mjs"
   },
   "dependencies": {
     "next": "16.4.5",
