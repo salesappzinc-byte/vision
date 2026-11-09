@@ -1,10 +1,11 @@
 export function FoundationNotice() {
   return (
-    <aside className="foundation-notice" aria-label="Foundation build limits">
-      <p className="foundation-notice__title">Website foundation only</p>
+    <aside className="foundation-notice" aria-label="Prototype limits">
+      <p className="foundation-notice__title">Free gateway prototype</p>
       <p>
-        Signup, saved progress, toolkit storage, and on-site AI practice are
-        not connected in this build. Buttons that depend on them stay disabled.
+        Seven review-draft lessons, a local toolkit, and progress saved in your
+        browser only. Signup, in-site AI practice, cloud save, checkout, and paid
+        course previews are not connected.
       </p>
     </aside>
   );

@@ -1,4 +1,4 @@
-/** Supported gateway copy from docs/course-research.md §5 and design/clearpath-a mocks. */
+/** Gateway metadata aligned with courses/gateway/index.md and docs/course-research.md §5. */
 
 export const GATEWAY_SLUG = "ai-foundations-gateway" as const;
 
@@ -6,66 +6,49 @@ export const gatewayCourse = {
   slug: GATEWAY_SLUG,
   title: "AI Foundations Gateway",
   workingTitle: "AI for your own work, in seven short lessons",
-  meta: "Gateway · ~7 short sittings",
+  meta: "Gateway · ~7 short sittings · review draft",
   tuitionLabel: "FREE",
   lede:
-    "For people who have heard of AI and still need who, why, how, and what—plus one practice task they can finish on this site.",
+    "For people who have heard of AI and still need who, why, how, and what—plus worksheets you can finish and save on this device.",
   outcomes: [
-    "Explain who AI is for, why people use it, how it is used, and what it is—in plain language.",
-    "Name benefits that attach to a goal of your own.",
-    "Finish one on-site practice task and save a Personal AI Toolkit.",
+    "Explain who a chat tool is for, why people use it, how it produces an answer, and what it is not—in plain language.",
+    "Build context into prompts, edit three drafts, and check claims against pages you opened yourself.",
+    "Finish a Personal AI Toolkit saved locally in your browser (not a cloud account).",
   ],
   prerequisites:
-    "None. No paid AI subscription is required for the gateway when the in-site text practice box exists (not available in this foundation build).",
+    "None. This prototype does not include an in-site AI practice box or signup. Optional external chat tools are your own account and cost—not course tuition.",
   finalProject:
-    "Personal AI Toolkit: prompts, reusable brief, edited content, checked sources, one mapped weekly task.",
+    "Personal AI Toolkit: plain-language card, prompts, brief, three edited drafts, claim-and-source log, do-not-paste list, and weekly task map.",
   paidToolsNotice:
-    "External tool subscriptions are separate from course tuition. Gateway practice is intended to stay on-site; any outside tool cost must be listed before you need it. Specific tools and prices are not verified in this foundation build.",
-  /** Lesson titles match design/clearpath-a course + lesson mocks; full outcomes in docs/course-research.md §5. */
+    "Course tuition for this gateway: FREE (payment not enabled). External AI tool subscriptions are separate costs and are unverified here—do not assume every optional tool is free.",
   lessons: [
-    {
-      number: 1,
-      slug: "1",
-      title: 'What people mean by “AI”',
-      status: "foundation-preview" as const,
-    },
-    {
-      number: 2,
-      slug: "2",
-      title: "Who it is for (and not for)",
-      status: "draft" as const,
-    },
-    {
-      number: 3,
-      slug: "3",
-      title: "Why people use it",
-      status: "draft" as const,
-    },
-    {
-      number: 4,
-      slug: "4",
-      title: "How a prompt becomes useful work",
-      status: "draft" as const,
-    },
-    {
-      number: 5,
-      slug: "5",
-      title: "Checking sources and limits",
-      status: "draft" as const,
-    },
-    {
-      number: 6,
-      slug: "6",
-      title: "Editing AI drafts into your voice",
-      status: "draft" as const,
-    },
-    {
-      number: 7,
-      slug: "7",
-      title: "Final project: Personal AI Toolkit",
-      status: "draft" as const,
-    },
+    { number: 1, slug: "1", title: "What it can and cannot do" },
+    { number: 2, slug: "2", title: "Context and a second pass" },
+    { number: 3, slug: "3", title: "A brief you can reuse" },
+    { number: 4, slug: "4", title: "Three drafts, then your edit" },
+    { number: 5, slug: "5", title: "Sources you opened" },
+    { number: 6, slug: "6", title: "What stays in your hands" },
+    { number: 7, slug: "7", title: "One weekly task, on paper" },
   ],
 } as const;
 
-export type LessonStatus = (typeof gatewayCourse.lessons)[number]["status"];
+export type GatewayLesson = (typeof gatewayCourse.lessons)[number];
+
+export function lessonBySlug(slug: string): GatewayLesson | undefined {
+  return gatewayCourse.lessons.find((l) => l.slug === slug);
+}
+
+export function adjacentLessons(slug: string): {
+  previous: GatewayLesson | null;
+  next: GatewayLesson | null;
+} {
+  const index = gatewayCourse.lessons.findIndex((l) => l.slug === slug);
+  if (index < 0) return { previous: null, next: null };
+  return {
+    previous: index > 0 ? gatewayCourse.lessons[index - 1]! : null,
+    next:
+      index < gatewayCourse.lessons.length - 1
+        ? gatewayCourse.lessons[index + 1]!
+        : null,
+  };
+}

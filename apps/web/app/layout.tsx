@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans, Newsreader } from "next/font/google";
+import { GatewayStoreProvider } from "@/components/gateway-store";
 import "./globals.css";
 
 const newsreader = Newsreader({
@@ -34,7 +35,7 @@ export default function RootLayout({
         <a href="#main" className="skip-link">
           Skip to main content
         </a>
-        {children}
+        <GatewayStoreProvider>{children}</GatewayStoreProvider>
       </body>
     </html>
   );
