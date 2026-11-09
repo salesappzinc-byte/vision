@@ -23,8 +23,8 @@ export function MascotHero({ compact = false }: MascotHeroProps) {
         priority={!compact}
       />
       <figcaption className="field-note">
-        Character still (review draft). Guide = ginger cat; learner = white
-        Pomeranian. Not a recorded software lesson.
+        Character still (review draft). Guide = ginger tabby cat; learner =
+        white Pomeranian. Not a recorded software lesson.
       </figcaption>
     </figure>
   );

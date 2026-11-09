@@ -20,8 +20,8 @@ export function MascotSlot({ compact = true }: { compact?: boolean }) {
         className="mascot-slot__thumb"
       />
       <p className="field-note">
-        Guide (ginger cat) and learner (white Pomeranian). Character still—not
-        recorded lesson footage.
+        Guide (ginger tabby cat) and learner (white Pomeranian). Character
+        still—not recorded lesson footage.
       </p>
     </aside>
   );
