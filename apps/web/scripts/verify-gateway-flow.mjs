@@ -38,7 +38,20 @@ async function main() {
       const video = await page.locator(".video-placeholder").innerText();
       if (!/not available yet/i.test(video)) fail(`lesson-${n}-video`);
       else pass(`lesson-${n}-video-unavailable`);
+      const refs = await page.locator(".lesson-references").count();
+      if (refs < 1) fail(`lesson-${n}-inline-examples`);
+      else pass(`lesson-${n}-inline-examples`);
     }
+
+    await page.goto(`${BASE}/courses/ai-foundations-gateway/lessons/1`, {
+      waitUntil: "networkidle",
+    });
+    const lesson1Text = await page.locator("main, article").first().innerText();
+    if (/courses\/gateway/i.test(lesson1Text)) fail("lesson-1-no-repo-refs");
+    else pass("lesson-1-no-repo-refs");
+    if (!/Sam's plain-language card|Sam’s plain-language card/i.test(lesson1Text))
+      fail("lesson-1-sam-card-visible");
+    else pass("lesson-1-sam-card-visible");
 
     async function waitHydrated(p) {
       await p.locator(".storage-banner").first().waitFor({ state: "visible" });

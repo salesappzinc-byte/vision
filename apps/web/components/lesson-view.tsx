@@ -6,6 +6,7 @@ import { LocalStorageBanner } from "@/components/local-storage-banner";
 import { VideoSlot } from "@/components/video-slot";
 import { MascotSlot } from "@/components/mascot-slot";
 import { Lesson1DialogueCallout } from "@/components/lesson1-dialogue-callout";
+import { LessonReferenceBlocks } from "@/components/lesson-reference-blocks";
 import { ButtonLink } from "@/components/ui-button";
 import { useGatewayStore } from "@/components/gateway-store";
 import { adjacentLessons, gatewayCourse } from "@/lib/gateway-course";
@@ -45,7 +46,8 @@ export function LessonView({ section }: LessonViewProps) {
         <LessonSidebar currentSlug={section.slug} />
         <article className="lesson-main">
           <p className="draft-banner" role="status">
-            Review draft — not final published lesson. Scripts: courses/gateway/
+            Review draft — not final published lesson. Examples on this page are
+            self-contained; lesson video is not available yet.
           </p>
           <LocalStorageBanner />
           <span className="badge-free">Free · local prototype</span>
@@ -76,8 +78,10 @@ export function LessonView({ section }: LessonViewProps) {
 
           <VideoSlot lessonTitle={section.title} />
 
+          <LessonReferenceBlocks slug={section.slug} />
+
           <section>
-            <h2 className="lesson-h2">Explanation and examples</h2>
+            <h2 className="lesson-h2">Explanation</h2>
             {section.explanation.map((para) => (
               <p key={para.slice(0, 40)}>{para}</p>
             ))}

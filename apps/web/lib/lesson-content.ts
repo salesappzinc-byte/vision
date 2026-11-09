@@ -1,4 +1,4 @@
-/** Review-draft lesson sections sourced from courses/gateway/lessons/*.md */
+/** Review-draft lesson sections (self-contained on the site; sources: courses/gateway scripts). */
 
 export type LessonSection = {
   slug: string;
@@ -26,17 +26,16 @@ export const lessonSections: LessonSection[] = [
       "What it is not: a colleague, a checker you can skip, or a machine that owes you income. A smooth paragraph can still be false.",
     ],
     examples: [
-      "Fictional Sam writes about labelled practice folders Shop A, B, and C—not real bookkeeping or tax advice.",
-      "Fictional Nia plans a neighbourhood book swap with no library agreement and no date set.",
+      "Use Sam and Nia’s model cards on this page as patterns—not words to copy as if they were yours.",
     ],
     exercise: [
-      "Read Sam and Nia's sample cards in the course scripts (courses/gateway/lessons/01-…).",
-      "Without a tool, write five to eight lines: who, why, how, what it is not, and one goal you can finish.",
-      "Optional: use an external chat page you are allowed to use; any tool fee is yours, not course tuition.",
-      "Copy your card into the toolkit on this device.",
+      "Read Sam’s and Nia’s model cards and the labelled sample reply on this page.",
+      "Without a chat tool, write five to eight lines: who, why, how, what it is not, and one goal you can finish.",
+      "Optional: circle invented details in the sample reply, or use the optional prompt with an external chat page you are allowed to use (any fee is yours, not course tuition).",
+      "Type your own card into the toolkit plain-language fields on this device.",
     ],
     completionCriterion:
-      "You saved a plain-language card in the toolkit and can name one place a tool might invent a fact.",
+      "Toolkit plain-language card has your words (not Sam’s shops copied as yours) and you can name one invented detail a tool might add.",
     toolkitContribution: "Plain-language card (lesson 1 fields).",
     honestLimits: [
       "In-site AI practice is unavailable in this prototype.",
@@ -56,15 +55,15 @@ export const lessonSections: LessonSection[] = [
       "Two passes are enough for this lesson. Endless passes are how people stop thinking.",
     ],
     examples: [
-      "Weak: 'Write something about my folders.' Stronger: name which folders, forbid invented shops, and set length and tone.",
+      "Compare the weak and stronger prompts on this page.",
     ],
     exercise: [
-      "Title two prompts (e.g. 'Four-line note' and 'Cut what I did not say').",
-      "Save them in the toolkit prompt slots 1 and 2. Edit words so you understand them.",
+      "Write your own weak one-line prompt, then rewrite it using the five-piece template on this page and your lesson 1 goal.",
+      "Save both titles in toolkit prompt slots 1 and 2 (note “not run yet” if you have no external chat tool).",
       "Do not connect email or press send on any chat page.",
     ],
     completionCriterion:
-      "Two prompt slots in the toolkit contain prompts you could find next week.",
+      "Two prompt slots in the toolkit contain prompts you understand and could find next week.",
     toolkitContribution: "Prompt library slots 1–2 (and more if you add them).",
     honestLimits: [
       "External chat tools are optional and may cost money—unverified here.",
@@ -82,13 +81,13 @@ export const lessonSections: LessonSection[] = [
       "Keep proof honest: 'none yet' is valid. Do not borrow reviews from the internet.",
     ],
     examples: [
-      "Sam's brief stays inside a writing exercise about folder labels—not financial guidance.",
+      "Use Sam’s and Nia’s model briefs on this page only as shape—not as your facts.",
     ],
     exercise: [
-      "Answer each brief heading in the toolkit, or interview yourself on paper.",
-      "Delete invented claims such as 'trusted by local shops' if you never said that.",
+      "Answer each brief heading in the toolkit, using the interview questions in the on-page prompt or asking yourself.",
+      "Edit every line: delete claims you cannot trace to your answers (mark gaps “not stated”).",
     ],
-    completionCriterion: "Every brief heading has your edited answer on one page.",
+    completionCriterion: "Every brief heading in the toolkit has your edited answer.",
     toolkitContribution: "Brief worksheet rows.",
     honestLimits: ["No in-site chat interview in this prototype."],
   },
@@ -104,14 +103,14 @@ export const lessonSections: LessonSection[] = [
       "Edit on the worksheet. 'Sent?' and 'Posted?' stay no.",
     ],
     examples: [
-      "Sam's post may list which folder is on the desk; it may not quote Shop A or name prices.",
+      "Sam’s edited post and description on this page show the tone—not text to publish.",
     ],
     exercise: [
-      "Fill post, email, and description columns in the toolkit.",
-      "Record what you changed in each row. If you changed nothing, look again.",
+      "Draft post, email, and description from your toolkit brief (by hand or optional external chat using the on-page prompts).",
+      "Fill all three worksheet columns; record at least one change per piece.",
     ],
     completionCriterion:
-      "All three draft worksheets have a final column you would show a colleague.",
+      "All three draft worksheets have a final column and show what you changed.",
     toolkitContribution: "Draft worksheets (post, email, description).",
     honestLimits: [
       "This site does not post, send email, or call an AI API for you.",
@@ -127,14 +126,13 @@ export const lessonSections: LessonSection[] = [
     explanation: [
       "Asking the tool 'are you sure?' is not a check—that is the tool agreeing with itself.",
       "Open the page, copy title and address from the address bar, mark each claim: matches / does not match / not on the page.",
-      "Lesson draft names Wikipedia:About as one example page—open it yourself; words may change.",
     ],
     examples: [
-      "Sam's line 'Shop A is still on the desk' needs no web page—it is a label, not market research.",
+      "Use the example Wikipedia About link on this page, or any public page you choose.",
     ],
     exercise: [
-      "Open at least one public page yourself. Copy address from the browser, not from a chat reply.",
-      "Fill source log rows and initial them. Do not treat AI self-confirmation as verification.",
+      "Open at least one public page (the example link or your own). Copy title and address from the browser—not from a chat reply.",
+      "Fill source log rows in the toolkit and initial them yourself.",
     ],
     completionCriterion:
       "Each filled row has your initials and a match mark you chose—not one the tool assigned.",
@@ -156,11 +154,11 @@ export const lessonSections: LessonSection[] = [
       "Human approval is a person, not the tool. Leave off sends, posts, buys, and file-moving.",
     ],
     examples: [
-      "Fictional Shop A cannot speak—delete quotes that sound like a customer.",
+      "Use Sam’s do-not-paste model and the bad-line fix on this page.",
     ],
     exercise: [
-      "Fill the do-not-paste sections in the toolkit.",
-      "Mark whether you applied the list to brief and drafts (yes / not yet).",
+      "Write your do-not-paste lines in the toolkit using the headings there.",
+      "Edit one lesson 4 draft to remove a fake customer voice or secret; tick applied on brief and drafts.",
     ],
     completionCriterion:
       "Do-not-paste list is filled and applied flags are set honestly.",
@@ -175,17 +173,17 @@ export const lessonSections: LessonSection[] = [
     outcome:
       "Weekly task map plus optional local interest note—not enrolment or signup.",
     explanation: [
-      "Pick a task that already repeats. Draw five boxes. Do not connect email, files, or payments in this course.",
-      "Video / website / automation are ideas in project notes—not courses you can buy from this draft.",
+      "Pick a task that already repeats. Use five boxes. Do not connect email, files, or payments in this course.",
+      "Later video, website, and automation topics are described on this page—they are not courses you can buy here.",
       "An interest tick stays on this device only. No message is sent and no account is created.",
     ],
     examples: [
-      "Sam's Monday folder list; Nia's six lines toward a book swap with no date.",
+      "Follow Sam’s map table on this page as a pattern for your own task.",
     ],
     exercise: [
-      "Fill the weekly map in the toolkit and confirm you did not connect live tools.",
-      "Optionally circle an interest: video / website / automation / not yet.",
-      "Use the completion checklist on the toolkit page.",
+      "Fill the weekly map in the toolkit; check “not connected to email, files, or payments.”",
+      "Answer the five knowledge-check questions on this page in your notes or toolkit.",
+      "Optionally set interest: video / website / automation / not yet.",
     ],
     completionCriterion:
       "Weekly map has all five boxes, not-connected confirm is checked, and you marked lesson 7 complete yourself.",
@@ -199,4 +197,9 @@ export const lessonSections: LessonSection[] = [
 
 export function lessonSectionBySlug(slug: string): LessonSection | undefined {
   return lessonSections.find((s) => s.slug === slug);
+}
+
+/** For tests: all learner-facing lesson text must be self-contained on the site. */
+export function allLessonLearnerText(): string {
+  return JSON.stringify(lessonSections);
 }

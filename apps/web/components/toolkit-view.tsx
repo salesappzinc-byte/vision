@@ -86,7 +86,8 @@ export function ToolkitView() {
         <LessonSidebar currentSlug="" />
         <article className="lesson-main">
           <p className="draft-banner" role="status">
-            Review draft toolkit — mirrors courses/gateway/toolkit.md
+            Review draft toolkit — save on this device or export; not a cloud
+            account
           </p>
           <LocalStorageBanner />
           <h1

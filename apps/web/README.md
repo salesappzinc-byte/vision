@@ -1,20 +1,33 @@
-# Clearpath web (foundation)
+# Clearpath web (gateway prototype)
 
-Next.js app for Direction A static routes. Does not include auth, persistence, payments, or AI APIs.
+Next.js app for the free **AI Foundations Gateway** review prototype: seven lessons, local toolkit, no auth, no in-site AI, no payments.
 
-## Preview locally
+## Reliable local preview (tested in cloud agent)
 
-```bash
-cd apps/web
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-## Production build check
+Production mode is what automated verification uses:
 
 ```bash
 cd apps/web
-npm run lint
+npm install
 npm run build
+npm run start
+# default http://localhost:3000 — or: npm run start -- -p 3457
 ```
+
+Then:
+
+```bash
+BASE_URL=http://localhost:3000 npm run verify:flow
+npm test
+npm run lint
+```
+
+## `npm run dev` — not verified in cloud agent VM
+
+`npm run dev` is the normal local workflow on your machine. In the November 2026 cloud agent environment, Playwright observed **only the Turbopack HMR client scripts** loading; the main app client bundle did not attach, and the storage banner stayed on “Checking for work saved on this device…” indefinitely. Production `next start` hydrated and passed all 26 flow checks on the same VM.
+
+That points to an **environment-specific dev/HMR issue**, not a proven defect in the production build. If `npm run dev` misbehaves on your PC, use `npm run build && npm run start` for a reliable preview.
+
+## Scope limits
+
+No signup, cloud save, checkout, lesson video, or live AI practice in this prototype.
